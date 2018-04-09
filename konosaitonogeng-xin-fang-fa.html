@@ -30,11 +30,11 @@
     <meta name="twitter:creator" content="jiuya">
     <meta name="twitter:url" content="https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html">
     <meta name="twitter:title" content="Hello Blog ~ このサイトの更新方法">
-    <meta name="twitter:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt 記事を書く content/ 以下に記事を書きマークダウンで保存する。 変換 マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してmasterブランチに移す。 $ pelican content -o output -s pelicanconf.py $ ghp-import output -b master 参考 Python製Webサイト生成ツール Pelicanを使ってGithubにブログを公開する">
+    <meta name="twitter:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt このリポジトリをクローンする。 $ git clone https://github.com/jiuya/jiuya.github.io.git $ git checkout source $ git submodule update --init 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master 参考 PelicanとGitHub-pagesでブログ開設 ブログジェネレータをTinkererからPelicanに移行した">
 
     <!-- Facebook Meta Data -->
     <meta property="og:title" content="Hello Blog ~ このサイトの更新方法"/>
-    <meta property="og:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt 記事を書く content/ 以下に記事を書きマークダウンで保存する。 変換 マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してmasterブランチに移す。 $ pelican content -o output -s pelicanconf.py $ ghp-import output -b master 参考 Python製Webサイト生成ツール Pelicanを使ってGithubにブログを公開する"/>
+    <meta property="og:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt このリポジトリをクローンする。 $ git clone https://github.com/jiuya/jiuya.github.io.git $ git checkout source $ git submodule update --init 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master 参考 PelicanとGitHub-pagesでブログ開設 ブログジェネレータをTinkererからPelicanに移行した"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -97,6 +97,7 @@
                                                   title="Permalink to このサイトの更新方法">このサイトの更新方法</a></h2>
             <div class="entry-content blog-post">
                 <h1>更新しようとしたら使い方を忘れていたのでメモ</h1>
+<h2></h2>
 <h2>準備</h2>
 <ul>
 <li>必要なパッケージをインストールする。</li>
@@ -105,22 +106,35 @@
 </pre></div>
 
 
+<ul>
+<li>このリポジトリをクローンする。</li>
+</ul>
+<div class="highlight"><pre><span></span>$ git clone https://github.com/jiuya/jiuya.github.io.git
+$ git checkout <span class="nb">source</span>
+$ git submodule update --init 
+</pre></div>
+
+
 <h2>記事を書く</h2>
 <ul>
 <li>content/ 以下に記事を書きマークダウンで保存する。</li>
 </ul>
-<h2>変換</h2>
+<h2>Githubにアップロード</h2>
 <ul>
 <li>マークダウン形式のファイルをHTMLファイルに変換する。</li>
-<li>変換したファイルを<strong>ghp-import</strong>を使用してmasterブランチに移す。</li>
+<li>変換したファイルを<strong>ghp-import</strong>を使用してGithubにpushする。</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">pelican</span> <span class="n">content</span> <span class="o">-</span><span class="n">o</span> <span class="n">output</span> <span class="o">-</span><span class="n">s</span> <span class="n">pelicanconf</span><span class="o">.</span><span class="n">py</span>
-<span class="err">$</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">output</span> <span class="o">-</span><span class="n">b</span> <span class="n">master</span>
+<div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">make</span> <span class="n">html</span>
+<span class="err">$</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">output</span>
+<span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">f</span> <span class="n">origin</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span><span class="p">:</span><span class="n">master</span>
 </pre></div>
 
 
 <h2>参考</h2>
-<p><a href="https://qiita.com/akimach/items/dfcac164ac5669a6378e">Python製Webサイト生成ツール Pelicanを使ってGithubにブログを公開する</a></p>
+<ul>
+<li><a href="https://qiita.com/akimach/items/dfcac164ac5669a6378://kazukousen.github.io/python-pelican-install.html">PelicanとGitHub-pagesでブログ開設</a></li>
+<li><a href="https://memo.laughk.org/2014/08/10/tinker2pelican-repo.html">ブログジェネレータをTinkererからPelicanに移行した</a></li>
+</ul>
             </div>
             <div class="post_list">
                 <span>By </span>
