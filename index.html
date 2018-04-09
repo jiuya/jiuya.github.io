@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="japanese">
+<head>
+        <title>Hello Blog</title>
+        <meta charset="utf-8" />
+</head>
+
+<body id="index" class="home">
+        <header id="banner" class="body">
+                <h1><a href="https://jiuya.github.io/">Hello Blog <strong></strong></a></h1>
+        </header><!-- /#banner -->
+        <nav id="menu"><ul>
+            <li><a href="https://jiuya.github.io">Blog</a></li>
+            <li><a href="https://jiuya.github.io/pages/about.html">About</a></li>
+        </ul></nav><!-- /#menu -->
+<section id="content">
+<h2>All articles</h2>
+
+<ol id="post-list">
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html" rel="bookmark" title="Permalink to このサイトの更新方法">このサイトの更新方法</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2018-04-09T13:43:00+09:00"> 月 09 4月 2018 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://jiuya.github.io/author/jiuya.html">jiuya</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <h1>更新しようとしたら使い方を忘れていたのメモ</h1>
+<h2>準備</h2>
+<ul>
+<li>必要なパッケージをインストールする。</li>
+</ul>
+<div class="highlight"><pre><span></span>$ pip install -r requirements.txt
+</pre></div>
+
+
+<h2>記事を書く</h2>
+<ul>
+<li>content/ 以下に記事を書きマークダウンで保存する。</li>
+</ul>
+<h2>変換</h2>
+<ul>
+<li>マークダウン形式のファイルをHTMLファイルに変換する。</li>
+<li>変換したファイルを<strong>ghp-import</strong>を使用してmasterブランチに移す。</li>
+</ul>
+<div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">pelican</span> <span class="n">content</span> <span class="o">-</span><span class="n">o</span> <span class="n">output</span> <span class="o">-</span><span class="n">s</span> <span class="n">pelicanconf</span><span class="o">.</span><span class="n">py</span>
+<span class="err">$</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">output</span> <span class="o">-</span><span class="n">b</span> <span class="n">master</span>
+</pre></div>
+
+
+<h2>参考</h2>
+<p><a href="https://qiita.com/akimach/items/dfcac164ac5669a6378e">Python製Webサイト生成ツール Pelicanを使ってGithubにブログを公開する</a></p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://jiuya.github.io/ohayoushi-jie.html" rel="bookmark" title="Permalink to おはよう世界">おはよう世界</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2018-01-09T19:08:00+09:00"> 火 09 1月 2018 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://jiuya.github.io/author/jiuya.html">jiuya</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <p>ブログを作ってみた。</p> </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header> <h2 class="entry-title"><a href="https://jiuya.github.io/test.html" rel="bookmark" title="Permalink to test">test</a></h2> </header>
+                <footer class="post-info">
+                    <time class="published" datetime="2018-01-09T00:00:00+09:00"> 火 09 1月 2018 </time>
+                    <address class="vcard author">By
+                        <a class="url fn" href="https://jiuya.github.io/author/jiuya.html">jiuya</a>
+                    </address>
+                </footer><!-- /.post-info -->
+                <div class="entry-content"> <h1>test</h1>
+<ul>
+<li>test</li>
+<li>hoge</li>
+</ul> </div><!-- /.entry-content -->
+        </article></li>
+</ol><!-- /#posts-list -->
+</section><!-- /#content -->
+        <footer id="contentinfo" class="body">
+                <address id="about" class="vcard body">
+                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
+                which takes great advantage of <a href="http://python.org">Python</a>.
+                </address><!-- /#about -->
+        </footer><!-- /#contentinfo -->
+</body>
+</html>
