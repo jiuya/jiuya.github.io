@@ -30,7 +30,7 @@ SOCIAL = (('github', 'https://github.com/jiuya'),
 
 DEFAULT_PAGINATION = 10
 
-THEME = 'pelican-themes/pelican-blue'
+THEME = './pelican-themes/pelican-blue'
 SIDEBAR_DIGEST = 'Embedded Programmer'
 FAVICON = 'https://avatars3.githubusercontent.com/u/6884687?s=460&v=4'
 DISPLAY_PAGES_ON_MENU = True
