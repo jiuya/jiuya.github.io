@@ -1,0 +1,3 @@
+[submodule "pelican-themes/pelican-blue"]
+	path = pelican-themes/pelican-blue
+	url = https://github.com/Parbhat/pelican-blue
