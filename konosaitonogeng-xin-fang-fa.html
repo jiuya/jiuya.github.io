@@ -1,38 +1,102 @@
-<!DOCTYPE html>
-<html lang="japanese">
+<!doctype html>
+<html lang="japanese" itemscope itemtype="http://schema.org/Person">
 <head>
-          <title>Hello Blog</title>
-        <meta charset="utf-8" />
+            <meta charset="utf-8">
+        <!-- Site Meta Data -->
+        <title>このサイトの更新方法</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="jiuya">
 
+        <link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/6884687?s=460&v=4">
 
+        <!-- schema.org -->
+        <meta itemprop="name" content="Hello Blog">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
 
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Style Meta Data -->
+        <link rel="stylesheet" href="https://jiuya.github.io/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://jiuya.github.io/theme/css/pygments.css" type="text/css"/>
+
+        <!-- Feed Meta Data -->
+
+        <!-- Twitter Feed -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="jiuya">
+        <meta name="twitter:image" content="">
+
+    <meta name="twitter:creator" content="jiuya">
+    <meta name="twitter:url" content="https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html">
+    <meta name="twitter:title" content="Hello Blog ~ このサイトの更新方法">
+    <meta name="twitter:description" content="更新しようとしたら使い方を忘れていたのメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt 記事を書く content/ 以下に記事を書きマークダウンで保存する。 変換 マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してmasterブランチに移す。 $ pelican content -o output -s pelicanconf.py $ ghp-import output -b master 参考 Python製Webサイト生成ツール Pelicanを使ってGithubにブログを公開する">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Hello Blog ~ このサイトの更新方法"/>
+    <meta property="og:description" content="更新しようとしたら使い方を忘れていたのメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt 記事を書く content/ 以下に記事を書きマークダウンで保存する。 変換 マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してmasterブランチに移す。 $ pelican content -o output -s pelicanconf.py $ ghp-import output -b master 参考 Python製Webサイト生成ツール Pelicanを使ってGithubにブログを公開する"/>
+    <meta property="og:image" content=""/>
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://jiuya.github.io/">Hello Blog <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-            <li><a href="https://jiuya.github.io">Blog</a></li>
-            <li><a href="https://jiuya.github.io/pages/about.html">About</a></li>
-        </ul></nav><!-- /#menu -->
-<section id="content" class="body">
-  <header>
-    <h2 class="entry-title">
-      <a href="https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html" rel="bookmark"
-         title="Permalink to このサイトの更新方法">このサイトの更新方法</a></h2>
- 
-  </header>
-  <footer class="post-info">
-    <time class="published" datetime="2018-04-09T13:43:00+09:00">
-      月 09 4月 2018
-    </time>
-    <address class="vcard author">
-      By           <a class="url fn" href="https://jiuya.github.io/author/jiuya.html">jiuya</a>
-    </address>
-  </footer><!-- /.post-info -->
-  <div class="entry-content">
-    <h1>更新しようとしたら使い方を忘れていたのメモ</h1>
+<body>
+<!-- Sidebar -->
+<aside>
+    <!--<center><a href="https://jiuya.github.io"><img id="avatar" src=""></a></center>-->
+    <h1>Hello Blog</h1>
+        <p>Embedded Programmer</p>
+    <br>
+
+        <a class="twitter-follow-button"
+           href="https://twitter.com/jiuya"
+           data-show-count="false"
+           data-lang="en">
+            Follow @twitterdev
+        </a>
+        <script type="text/javascript">
+            window.twttr = (function (d, s, id) {
+                var t, js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                return window.twttr || (t = {
+                        _e: [], ready: function (f) {
+                            t._e.push(f)
+                        }
+                    });
+            }(document, "script", "twitter-wjs"));
+        </script>
+
+    <nav class="nav">
+        <ul class="list-bare">
+
+                <li><a class="nav__link" href="https://jiuya.github.io">Blog</a></li>
+
+                <li><a class="nav__link" href="https://jiuya.github.io/pages/about.html">About</a></li>
+
+        </ul>
+    </nav>
+
+    <p class="social">
+                <a href="https://github.com/jiuya" target="_blank"><img
+                        src="https://jiuya.github.io/theme/images/icons/github.png"></a>
+                <a href="https://twitter.com/jiuya" target="_blank"><img
+                        src="https://jiuya.github.io/theme/images/icons/twitter.png"></a>
+    </p>
+
+
+
+</aside>
+
+<!-- Content -->
+<article>
+    <section id="content">
+        <article>
+            <h2 class="post_title post_detail"><a href="https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html" rel="bookmark"
+                                                  title="Permalink to このサイトの更新方法">このサイトの更新方法</a></h2>
+            <div class="entry-content blog-post">
+                <h1>更新しようとしたら使い方を忘れていたのメモ</h1>
 <h2>準備</h2>
 <ul>
 <li>必要なパッケージをインストールする。</li>
@@ -57,13 +121,61 @@
 
 <h2>参考</h2>
 <p><a href="https://qiita.com/akimach/items/dfcac164ac5669a6378e">Python製Webサイト生成ツール Pelicanを使ってGithubにブログを公開する</a></p>
-  </div><!-- /.entry-content -->
-</section>
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+            </div>
+            <div class="post_list">
+                <span>By </span>
+                <a href="https://jiuya.github.io/author/jiuya.html">@jiuya</a>
+                <span> in </span>
+                <span class="post_category"><a href="https://jiuya.github.io/category/other.html" rel="bookmark"
+                                               title="Permalink to other">[ other ]</a></span>
+                <span class="post_date">月 09 4月 2018</span>
+                <div><span>Tags : </span>
+                </div>
+
+                <div class="entry-social">
+                    <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html&text=このサイトの更新方法&via=jiuya"><img
+                            src="https://jiuya.github.io/theme/images/icons/twitter-s.png"></a></span>
+
+                    <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="https://jiuya.github.io/theme/images/icons/google-s.png"></a></span>
+
+                    <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html&t=このサイトの更新方法"><img
+                            src="https://jiuya.github.io/theme/images/icons/facebook-s.png"></a></span>
+
+                    <a target="_blank" title="Linkedin"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html&title=このサイトの更新方法"
+                       rel="nofollow"
+                       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="https://jiuya.github.io/theme/images/icons/linkedin-s.png"></a>
+
+                    <span class="mail"><a
+                            href="mailto:?subject=このサイトの更新方法&amp;body=Viens découvrir un article à propos de [このサイトの更新方法] sur le site de jiuya. https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html"
+                            title="Share by Email" target="_blank"><img
+                            src="https://jiuya.github.io/theme/images/icons/mail-s.png"></a></span>
+                </div>
+            </div>
+        </article>
+    </section>
+</article>
+
+<!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
+                href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+
+
 </body>
 </html>

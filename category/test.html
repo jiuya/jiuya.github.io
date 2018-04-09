@@ -1,53 +1,144 @@
-<!DOCTYPE html>
-<html lang="japanese">
+<!doctype html>
+<html lang="japanese" itemscope itemtype="http://schema.org/Person">
 <head>
-        <title>Hello Blog</title>
-        <meta charset="utf-8" />
+                <meta charset="utf-8">
+        <!-- Site Meta Data -->
+        <title>Hello Blog - test</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="jiuya">
+
+        <link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/6884687?s=460&v=4">
+
+        <!-- schema.org -->
+        <meta itemprop="name" content="Hello Blog">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Style Meta Data -->
+        <link rel="stylesheet" href="https://jiuya.github.io/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://jiuya.github.io/theme/css/pygments.css" type="text/css"/>
+
+        <!-- Feed Meta Data -->
+
+        <!-- Twitter Feed -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="jiuya">
+        <meta name="twitter:image" content="">
+
+    <meta name="twitter:creator" content="jiuya">
+    <meta name="twitter:url" content="https://jiuya.github.io">
+    <meta name="twitter:title" content="Hello Blog">
+    <meta name="twitter:description" content="Embedded Programmer">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Hello Blog"/>
+    <meta property="og:description" content="Embedded Programmer"/>
+    <meta property="og:image" content=""/>
+
+    <meta name="twitter:creator" content="jiuya">
+    <meta name="twitter:url" content="https://jiuya.github.io/category/test.html">
+    <meta name="twitter:title" content="Hello Blog ~ test">
+    <meta name="twitter:description" content="Articles de test">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Hello Blog ~ test"/>
+    <meta property="og:description" content="Articles de test"/>
+    <meta property="og:image" content=""/>
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://jiuya.github.io/">Hello Blog <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-            <li><a href="https://jiuya.github.io">Blog</a></li>
-            <li><a href="https://jiuya.github.io/pages/about.html">About</a></li>
-        </ul></nav><!-- /#menu -->
-<section id="content">
-<h2>Articles in the test category</h2>
+<body>
+<!-- Sidebar -->
+<aside>
+    <!--<center><a href="https://jiuya.github.io"><img id="avatar" src=""></a></center>-->
+    <h1>Hello Blog</h1>
+        <p>Embedded Programmer</p>
+    <br>
 
-<ol id="post-list">
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="https://jiuya.github.io/ohayoushi-jie.html" rel="bookmark" title="Permalink to おはよう世界">おはよう世界</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2018-01-09T19:08:00+09:00"> 火 09 1月 2018 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="https://jiuya.github.io/author/jiuya.html">jiuya</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <p>ブログを作ってみた。</p> </div><!-- /.entry-content -->
-        </article></li>
-        <li><article class="hentry">
-                <header> <h2 class="entry-title"><a href="https://jiuya.github.io/test.html" rel="bookmark" title="Permalink to test">test</a></h2> </header>
-                <footer class="post-info">
-                    <time class="published" datetime="2018-01-09T00:00:00+09:00"> 火 09 1月 2018 </time>
-                    <address class="vcard author">By
-                        <a class="url fn" href="https://jiuya.github.io/author/jiuya.html">jiuya</a>
-                    </address>
-                </footer><!-- /.post-info -->
-                <div class="entry-content"> <h1>test</h1>
-<ul>
-<li>test</li>
-<li>hoge</li>
-</ul> </div><!-- /.entry-content -->
-        </article></li>
-</ol><!-- /#posts-list -->
-</section><!-- /#content -->
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+        <a class="twitter-follow-button"
+           href="https://twitter.com/jiuya"
+           data-show-count="false"
+           data-lang="en">
+            Follow @twitterdev
+        </a>
+        <script type="text/javascript">
+            window.twttr = (function (d, s, id) {
+                var t, js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                return window.twttr || (t = {
+                        _e: [], ready: function (f) {
+                            t._e.push(f)
+                        }
+                    });
+            }(document, "script", "twitter-wjs"));
+        </script>
+
+    <nav class="nav">
+        <ul class="list-bare">
+
+                <li><a class="nav__link" href="https://jiuya.github.io">Blog</a></li>
+
+                <li><a class="nav__link" href="https://jiuya.github.io/pages/about.html">About</a></li>
+
+        </ul>
+    </nav>
+
+    <p class="social">
+                <a href="https://github.com/jiuya" target="_blank"><img
+                        src="https://jiuya.github.io/theme/images/icons/github.png"></a>
+                <a href="https://twitter.com/jiuya" target="_blank"><img
+                        src="https://jiuya.github.io/theme/images/icons/twitter.png"></a>
+    </p>
+
+
+
+</aside>
+
+<!-- Content -->
+<article>
+    <h1 class="title">Hi, I'm jiuya</h1>
+        <ol>
+    <h2 class="latest">Category: test</h2>
+                <li class="post_list"><p class="post_entry">
+                    <h2 class="post_title"><a href="https://jiuya.github.io/ohayoushi-jie.html" rel="bookmark"
+                                              title="Permalink to おはよう世界">おはよう世界</a>
+                    </h2>
+                    <a href="https://jiuya.github.io/author/jiuya.html">@jiuya</a>
+                    <span> in </span>
+                    <span class="post_category"><a href="https://jiuya.github.io/category/test.html" rel="bookmark"
+                                                   title="Permalink to test">[ test ]</a></span>
+                    <span class="post_date">火 09 1月 2018</span>
+                </li>
+                <li class="post_list"><p class="post_entry">
+                    <h2 class="post_title"><a href="https://jiuya.github.io/test.html" rel="bookmark"
+                                              title="Permalink to test">test</a>
+                    </h2>
+                    <a href="https://jiuya.github.io/author/jiuya.html">@jiuya</a>
+                    <span> in </span>
+                    <span class="post_category"><a href="https://jiuya.github.io/category/test.html" rel="bookmark"
+                                                   title="Permalink to test">[ test ]</a></span>
+                    <span class="post_date">火 09 1月 2018</span>
+                </li>
+        </ol>
+
+
+</article>
+
+<!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
+                href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+
+
 </body>
 </html>

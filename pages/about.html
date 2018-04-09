@@ -1,22 +1,89 @@
-<!DOCTYPE html>
-<html lang="japanese">
+<!doctype html>
+<html lang="japanese" itemscope itemtype="http://schema.org/Person">
 <head>
+        <meta charset="utf-8">
+        <!-- Site Meta Data -->
         <title>About</title>
-        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="jiuya">
+
+        <link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/6884687?s=460&v=4">
+
+        <!-- schema.org -->
+        <meta itemprop="name" content="Hello Blog">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Style Meta Data -->
+        <link rel="stylesheet" href="https://jiuya.github.io/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="https://jiuya.github.io/theme/css/pygments.css" type="text/css"/>
+
+        <!-- Feed Meta Data -->
+
+        <!-- Twitter Feed -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="jiuya">
+        <meta name="twitter:image" content="">
 </head>
 
-<body id="index" class="home">
-        <header id="banner" class="body">
-                <h1><a href="https://jiuya.github.io/">Hello Blog <strong></strong></a></h1>
-        </header><!-- /#banner -->
-        <nav id="menu"><ul>
-            <li><a href="https://jiuya.github.io">Blog</a></li>
-            <li class="active"><a href="https://jiuya.github.io/pages/about.html">About</a></li>
-        </ul></nav><!-- /#menu -->
-    <h1>About</h1>
-    
+<body>
+<!-- Sidebar -->
+<aside>
+    <!--<center><a href="https://jiuya.github.io"><img id="avatar" src=""></a></center>-->
+    <h1>Hello Blog</h1>
+        <p>Embedded Programmer</p>
+    <br>
 
-    <h2>About</h2>
+        <a class="twitter-follow-button"
+           href="https://twitter.com/jiuya"
+           data-show-count="false"
+           data-lang="en">
+            Follow @twitterdev
+        </a>
+        <script type="text/javascript">
+            window.twttr = (function (d, s, id) {
+                var t, js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                return window.twttr || (t = {
+                        _e: [], ready: function (f) {
+                            t._e.push(f)
+                        }
+                    });
+            }(document, "script", "twitter-wjs"));
+        </script>
+
+    <nav class="nav">
+        <ul class="list-bare">
+
+                <li><a class="nav__link" href="https://jiuya.github.io">Blog</a></li>
+
+                <li><a class="nav__link" href="https://jiuya.github.io/pages/about.html">About</a></li>
+
+        </ul>
+    </nav>
+
+    <p class="social">
+                <a href="https://github.com/jiuya" target="_blank"><img
+                        src="https://jiuya.github.io/theme/images/icons/github.png"></a>
+                <a href="https://twitter.com/jiuya" target="_blank"><img
+                        src="https://jiuya.github.io/theme/images/icons/twitter.png"></a>
+    </p>
+
+
+
+</aside>
+
+<!-- Content -->
+<article>
+    <section id="content" class="body">
+
+        <h2>About</h2>
 <hr>
 <h3>基本情報</h3>
 <table>
@@ -83,12 +150,19 @@
 <ul>
 <li>Git</li>
 </ul>
+    </section>
+</article>
 
-        <footer id="contentinfo" class="body">
-                <address id="about" class="vcard body">
-                Proudly powered by <a href="http://getpelican.com/">Pelican</a>,
-                which takes great advantage of <a href="http://python.org">Python</a>.
-                </address><!-- /#about -->
-        </footer><!-- /#contentinfo -->
+<!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
+                href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+
+
 </body>
 </html>

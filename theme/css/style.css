@@ -57,16 +57,6 @@ article section .blog-post
 }
 
 /* Body */
-body table{
-  border-collapse: collapse;
-  border-bottom: 1px solid #ddd;
-}
-body table tr th,
-body table tr td {
-  padding: 0 10px;
-  border-bottom: 1px solid #ddd;
-  text-align: left;
-}
 body {margin: 0}
 body > article, footer {
   line-height: 1.6em;
