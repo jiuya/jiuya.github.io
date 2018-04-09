@@ -38,5 +38,9 @@ DISPLAY_CATEGORIES_ON_MENU = False
 LINKS = False
 TWITTER_USERNAME = 'jiuya'
 MENUITEMS = (('Blog', SITEURL),)
+
+STATIC_PATHS = ['images', 'extra/CNAME']
+EXTRA_PATH_METADATA = {'extra/CNAME': {'path': 'CNAME'},}
+
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
