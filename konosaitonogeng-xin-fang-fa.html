@@ -32,11 +32,11 @@
     <meta name="twitter:creator" content="jiuya">
     <meta name="twitter:url" content="/konosaitonogeng-xin-fang-fa.html">
     <meta name="twitter:title" content="Hello Blog ~ このサイトの更新方法">
-    <meta name="twitter:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt このリポジトリをクローンする。 $ git clone https://github.com/jiuya/jiuya.github.io.git $ git checkout source $ git submodule update --init 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master 参考 PelicanとGitHub-pagesでブログ開設 ブログジェネレータをTinkererからPelicanに移行した">
+    <meta name="twitter:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt このリポジトリをクローンする。 $ git clone https://github.com/jiuya/jiuya.github.io.git $ git checkout source $ git submodule update --init 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master (追記) githubにアップロードはmakefileに含まれていた。 $ make html …">
 
     <!-- Facebook Meta Data -->
     <meta property="og:title" content="Hello Blog ~ このサイトの更新方法"/>
-    <meta property="og:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt このリポジトリをクローンする。 $ git clone https://github.com/jiuya/jiuya.github.io.git $ git checkout source $ git submodule update --init 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master 参考 PelicanとGitHub-pagesでブログ開設 ブログジェネレータをTinkererからPelicanに移行した"/>
+    <meta property="og:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt このリポジトリをクローンする。 $ git clone https://github.com/jiuya/jiuya.github.io.git $ git checkout source $ git submodule update --init 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master (追記) githubにアップロードはmakefileに含まれていた。 $ make html …"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -134,7 +134,14 @@ $ git submodule update --init
 </pre></div>
 
 
-<hr>
+<ul>
+<li>(追記) githubにアップロードはmakefileに含まれていた。</li>
+</ul>
+<div class="highlight"><pre><span></span>$ make html
+$ make github
+</pre></div>
+
+
 <h2>参考</h2>
 <ul>
 <li><a href="https://qiita.com/akimach/items/dfcac164ac5669a6378://kazukousen.github.io/python-pelican-install.html">PelicanとGitHub-pagesでブログ開設</a></li>

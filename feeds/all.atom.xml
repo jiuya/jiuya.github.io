@@ -33,12 +33,10 @@ $ git submodule update --init
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;hr&gt;
-&lt;h2&gt;参考&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://qiita.com/akimach/items/dfcac164ac5669a6378://kazukousen.github.io/python-pelican-install.html"&gt;PelicanとGitHub-pagesでブログ開設&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://memo.laughk.org/2014/08/10/tinker2pelican-repo.html"&gt;ブログジェネレータをTinkererからPelicanに移行した&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;更新しようとしたら使い方を忘れていたのでメモ&lt;/h1&gt;
+&lt;li&gt;(追記) githubにアップロードはmakefileに含まれていた。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;更新しようとしたら使い方を忘れていたのでメモ&lt;/h1&gt;
 &lt;h2&gt;&lt;/h2&gt;
 &lt;h2&gt;準備&lt;/h2&gt;
 &lt;ul&gt;
@@ -72,7 +70,14 @@ $ git submodule update --init
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;(追記) githubにアップロードはmakefileに含まれていた。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html
+$ make github
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;h2&gt;参考&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://qiita.com/akimach/items/dfcac164ac5669a6378://kazukousen.github.io/python-pelican-install.html"&gt;PelicanとGitHub-pagesでブログ開設&lt;/a&gt;&lt;/li&gt;
