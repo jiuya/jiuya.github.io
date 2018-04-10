@@ -3,18 +3,16 @@
 &lt;h2&gt;準備&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;$ pelican-quickstart&lt;/code&gt; が行われているものとする。&lt;/li&gt;
-&lt;li&gt;必要なパッケージをインストールする。&lt;/li&gt;
+&lt;li&gt;このリポジトリをクローンする。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install -r requirements.txt
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone --recursive -b &lt;span class="nb"&gt;source&lt;/span&gt; https://github.com/jiuya/jiuya.github.io.git
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
-&lt;li&gt;このリポジトリをクローンする。&lt;/li&gt;
+&lt;li&gt;必要なパッケージをインストールする。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/jiuya/jiuya.github.io.git
-$ git checkout &lt;span class="nb"&gt;source&lt;/span&gt;
-$ git submodule update --init 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install -r requirements.txt
 &lt;/pre&gt;&lt;/div&gt;
 
 
@@ -34,22 +32,23 @@ $ git submodule update --init
 
 
 &lt;ul&gt;
-&lt;li&gt;(追記) githubにアップロードはMakefileに含まれていた …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;更新しようとしたら使い方を忘れていたのでメモ&lt;/h1&gt;
+&lt;li&gt;(追記) githubにアップロードはMakefileに含まれていた。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html
+$ make github …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;更新しようとしたら使い方を忘れていたのでメモ&lt;/h1&gt;
 &lt;h2&gt;準備&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;$ pelican-quickstart&lt;/code&gt; が行われているものとする。&lt;/li&gt;
-&lt;li&gt;必要なパッケージをインストールする。&lt;/li&gt;
+&lt;li&gt;このリポジトリをクローンする。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install -r requirements.txt
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone --recursive -b &lt;span class="nb"&gt;source&lt;/span&gt; https://github.com/jiuya/jiuya.github.io.git
 &lt;/pre&gt;&lt;/div&gt;
 
 
 &lt;ul&gt;
-&lt;li&gt;このリポジトリをクローンする。&lt;/li&gt;
+&lt;li&gt;必要なパッケージをインストールする。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/jiuya/jiuya.github.io.git
-$ git checkout &lt;span class="nb"&gt;source&lt;/span&gt;
-$ git submodule update --init 
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install -r requirements.txt
 &lt;/pre&gt;&lt;/div&gt;
 
 

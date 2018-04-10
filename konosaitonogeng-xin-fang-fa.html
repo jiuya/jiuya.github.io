@@ -32,11 +32,11 @@
     <meta name="twitter:creator" content="jiuya">
     <meta name="twitter:url" content="/konosaitonogeng-xin-fang-fa.html">
     <meta name="twitter:title" content="Hello Blog ~ このサイトの更新方法">
-    <meta name="twitter:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 $ pelican-quickstart が行われているものとする。 必要なパッケージをインストールする。 $ pip install -r requirements.txt このリポジトリをクローンする。 $ git clone https://github.com/jiuya/jiuya.github.io.git $ git checkout source $ git submodule update --init 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master (追記) githubにアップロードはMakefileに含まれていた …">
+    <meta name="twitter:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 $ pelican-quickstart が行われているものとする。 このリポジトリをクローンする。 $ git clone --recursive -b source https://github.com/jiuya/jiuya.github.io.git 必要なパッケージをインストールする。 $ pip install -r requirements.txt 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master (追記) githubにアップロードはMakefileに含まれていた。 $ make html $ make github …">
 
     <!-- Facebook Meta Data -->
     <meta property="og:title" content="Hello Blog ~ このサイトの更新方法"/>
-    <meta property="og:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 $ pelican-quickstart が行われているものとする。 必要なパッケージをインストールする。 $ pip install -r requirements.txt このリポジトリをクローンする。 $ git clone https://github.com/jiuya/jiuya.github.io.git $ git checkout source $ git submodule update --init 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master (追記) githubにアップロードはMakefileに含まれていた …"/>
+    <meta property="og:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 $ pelican-quickstart が行われているものとする。 このリポジトリをクローンする。 $ git clone --recursive -b source https://github.com/jiuya/jiuya.github.io.git 必要なパッケージをインストールする。 $ pip install -r requirements.txt 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master (追記) githubにアップロードはMakefileに含まれていた。 $ make html $ make github …"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -104,18 +104,16 @@
 <h2>準備</h2>
 <ul>
 <li><code>$ pelican-quickstart</code> が行われているものとする。</li>
-<li>必要なパッケージをインストールする。</li>
+<li>このリポジトリをクローンする。</li>
 </ul>
-<div class="highlight"><pre><span></span>$ pip install -r requirements.txt
+<div class="highlight"><pre><span></span>$ git clone --recursive -b <span class="nb">source</span> https://github.com/jiuya/jiuya.github.io.git
 </pre></div>
 
 
 <ul>
-<li>このリポジトリをクローンする。</li>
+<li>必要なパッケージをインストールする。</li>
 </ul>
-<div class="highlight"><pre><span></span>$ git clone https://github.com/jiuya/jiuya.github.io.git
-$ git checkout <span class="nb">source</span>
-$ git submodule update --init 
+<div class="highlight"><pre><span></span>$ pip install -r requirements.txt
 </pre></div>
 
 
