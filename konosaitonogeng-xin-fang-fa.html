@@ -17,10 +17,12 @@
 
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
         <!-- Style Meta Data -->
-        <link rel="stylesheet" href="https://jiuya.github.io/theme/css/style.css" type="text/css"/>
-        <link rel="stylesheet" href="https://jiuya.github.io/theme/css/pygments.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css"/>
 
         <!-- Feed Meta Data -->
+            <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+                  title="Hello Blog ATOM Feed"/>
 
         <!-- Twitter Feed -->
         <meta name="twitter:card" content="summary">
@@ -28,7 +30,7 @@
         <meta name="twitter:image" content="">
 
     <meta name="twitter:creator" content="jiuya">
-    <meta name="twitter:url" content="https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html">
+    <meta name="twitter:url" content="/konosaitonogeng-xin-fang-fa.html">
     <meta name="twitter:title" content="Hello Blog ~ このサイトの更新方法">
     <meta name="twitter:description" content="更新しようとしたら使い方を忘れていたのでメモ 準備 必要なパッケージをインストールする。 $ pip install -r requirements.txt このリポジトリをクローンする。 $ git clone https://github.com/jiuya/jiuya.github.io.git $ git checkout source $ git submodule update --init 記事を書く content/ 以下に記事を書きマークダウンで保存する。 Githubにアップロード マークダウン形式のファイルをHTMLファイルに変換する。 変換したファイルをghp-importを使用してGithubにpushする。 $ make html $ ghp-import output $ git push -f origin gh-pages:master 参考 PelicanとGitHub-pagesでブログ開設 ブログジェネレータをTinkererからPelicanに移行した">
 
@@ -41,7 +43,7 @@
 <body>
 <!-- Sidebar -->
 <aside>
-    <!--<center><a href="https://jiuya.github.io"><img id="avatar" src=""></a></center>-->
+    <!--<center><a href=""><img id="avatar" src=""></a></center>-->
     <h1>Hello Blog</h1>
         <p>Embedded Programmer</p>
     <br>
@@ -73,16 +75,18 @@
 
                 <li><a class="nav__link" href="https://jiuya.github.io">Blog</a></li>
 
-                <li><a class="nav__link" href="https://jiuya.github.io/pages/about.html">About</a></li>
+                <li><a class="nav__link" href="/pages/about.html">About</a></li>
 
         </ul>
     </nav>
 
     <p class="social">
                 <a href="https://github.com/jiuya" target="_blank"><img
-                        src="https://jiuya.github.io/theme/images/icons/github.png"></a>
+                        src="/theme/images/icons/github.png"></a>
                 <a href="https://twitter.com/jiuya" target="_blank"><img
-                        src="https://jiuya.github.io/theme/images/icons/twitter.png"></a>
+                        src="/theme/images/icons/twitter.png"></a>
+            <a href="/feeds/all.atom.xml" rel="alternate">
+                <img src="/theme/images/icons/rss.png"></a>
     </p>
 
 
@@ -93,7 +97,7 @@
 <article>
     <section id="content">
         <article>
-            <h2 class="post_title post_detail"><a href="https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html" rel="bookmark"
+            <h2 class="post_title post_detail"><a href="/konosaitonogeng-xin-fang-fa.html" rel="bookmark"
                                                   title="Permalink to このサイトの更新方法">このサイトの更新方法</a></h2>
             <div class="entry-content blog-post">
                 <h1>更新しようとしたら使い方を忘れていたのでメモ</h1>
@@ -130,6 +134,7 @@ $ git submodule update --init
 </pre></div>
 
 
+<hr>
 <h2>参考</h2>
 <ul>
 <li><a href="https://qiita.com/akimach/items/dfcac164ac5669a6378://kazukousen.github.io/python-pelican-install.html">PelicanとGitHub-pagesでブログ開設</a></li>
@@ -138,9 +143,9 @@ $ git submodule update --init
             </div>
             <div class="post_list">
                 <span>By </span>
-                <a href="https://jiuya.github.io/author/jiuya.html">@jiuya</a>
+                <a href="/author/jiuya.html">@jiuya</a>
                 <span> in </span>
-                <span class="post_category"><a href="https://jiuya.github.io/category/other.html" rel="bookmark"
+                <span class="post_category"><a href="/category/other.html" rel="bookmark"
                                                title="Permalink to other">[ other ]</a></span>
                 <span class="post_date">月 09 4月 2018</span>
                 <div><span>Tags : </span>
@@ -150,30 +155,30 @@ $ git submodule update --init
                     <span class="twitter"><a target="_blank" rel="nofollow"
                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
                                              title="Twitter"
-                                             href="https://twitter.com/share?url=https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html&text=このサイトの更新方法&via=jiuya"><img
-                            src="https://jiuya.github.io/theme/images/icons/twitter-s.png"></a></span>
+                                             href="https://twitter.com/share?url=/konosaitonogeng-xin-fang-fa.html&text=このサイトの更新方法&via=jiuya"><img
+                            src="/theme/images/icons/twitter-s.png"></a></span>
 
                     <span class="gplus"><a target="_blank" title="Google +"
-                                           href="https://plus.google.com/share?url=https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html&hl=fr"
+                                           href="https://plus.google.com/share?url=/konosaitonogeng-xin-fang-fa.html&hl=fr"
                                            rel="nofollow"
                                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
-                            src="https://jiuya.github.io/theme/images/icons/google-s.png"></a></span>
+                            src="/theme/images/icons/google-s.png"></a></span>
 
                     <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
                                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                              href="https://www.facebook.com/sharer.php?u=https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html&t=このサイトの更新方法"><img
-                            src="https://jiuya.github.io/theme/images/icons/facebook-s.png"></a></span>
+                                              href="https://www.facebook.com/sharer.php?u=/konosaitonogeng-xin-fang-fa.html&t=このサイトの更新方法"><img
+                            src="/theme/images/icons/facebook-s.png"></a></span>
 
                     <a target="_blank" title="Linkedin"
-                       href="https://www.linkedin.com/shareArticle?mini=true&url=https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html&title=このサイトの更新方法"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=/konosaitonogeng-xin-fang-fa.html&title=このサイトの更新方法"
                        rel="nofollow"
                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
-                            src="https://jiuya.github.io/theme/images/icons/linkedin-s.png"></a>
+                            src="/theme/images/icons/linkedin-s.png"></a>
 
                     <span class="mail"><a
-                            href="mailto:?subject=このサイトの更新方法&amp;body=Viens découvrir un article à propos de [このサイトの更新方法] sur le site de jiuya. https://jiuya.github.io/konosaitonogeng-xin-fang-fa.html"
+                            href="mailto:?subject=このサイトの更新方法&amp;body=Viens découvrir un article à propos de [このサイトの更新方法] sur le site de jiuya. /konosaitonogeng-xin-fang-fa.html"
                             title="Share by Email" target="_blank"><img
-                            src="https://jiuya.github.io/theme/images/icons/mail-s.png"></a></span>
+                            src="/theme/images/icons/mail-s.png"></a></span>
                 </div>
             </div>
         </article>
