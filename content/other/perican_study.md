@@ -6,16 +6,15 @@ Date: 2018-04-09 13:43
 
 ## 準備
 - `$ pelican-quickstart` が行われているものとする。
+- このリポジトリをクローンする。
+```
+$ git clone --recursive -b source https://github.com/jiuya/jiuya.github.io.git
+```
 - 必要なパッケージをインストールする。
 ```
 $ pip install -r requirements.txt
 ```
-- このリポジトリをクローンする。
-```
-$ git clone https://github.com/jiuya/jiuya.github.io.git
-$ git checkout source
-$ git submodule update --init 
-```
+
 
 ## 記事を書く
 - `content/` 以下に記事を書きマークダウンで保存する。
