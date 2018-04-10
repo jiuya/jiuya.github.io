@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2018-04-09T13:43:00+09:00</updated><entry><title>このサイトの更新方法</title><link href="/konosaitonogeng-xin-fang-fa.html" rel="alternate"></link><published>2018-04-09T13:43:00+09:00</published><updated>2018-04-09T13:43:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-04-09:/konosaitonogeng-xin-fang-fa.html</id><summary type="html">&lt;h1&gt;更新しようとしたら使い方を忘れていたのでメモ&lt;/h1&gt;
-&lt;h2&gt;&lt;/h2&gt;
 &lt;h2&gt;準備&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$ pelican-quickstart&lt;/code&gt; が行われているものとする。&lt;/li&gt;
 &lt;li&gt;必要なパッケージをインストールする。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install -r requirements.txt
@@ -20,7 +20,7 @@ $ git submodule update --init
 
 &lt;h2&gt;記事を書く&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;content/ 以下に記事を書きマークダウンで保存する。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content/&lt;/code&gt; 以下に記事を書きマークダウンで保存する。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Githubにアップロード&lt;/h2&gt;
 &lt;ul&gt;
@@ -34,12 +34,10 @@ $ git submodule update --init
 
 
 &lt;ul&gt;
-&lt;li&gt;(追記) githubにアップロードはmakefileに含まれていた。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h1&gt;更新しようとしたら使い方を忘れていたのでメモ&lt;/h1&gt;
-&lt;h2&gt;&lt;/h2&gt;
+&lt;li&gt;(追記) githubにアップロードはMakefileに含まれていた …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;更新しようとしたら使い方を忘れていたのでメモ&lt;/h1&gt;
 &lt;h2&gt;準備&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;code&gt;$ pelican-quickstart&lt;/code&gt; が行われているものとする。&lt;/li&gt;
 &lt;li&gt;必要なパッケージをインストールする。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ pip install -r requirements.txt
@@ -57,7 +55,7 @@ $ git submodule update --init
 
 &lt;h2&gt;記事を書く&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;content/ 以下に記事を書きマークダウンで保存する。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;content/&lt;/code&gt; 以下に記事を書きマークダウンで保存する。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2&gt;Githubにアップロード&lt;/h2&gt;
 &lt;ul&gt;
@@ -71,13 +69,14 @@ $ git submodule update --init
 
 
 &lt;ul&gt;
-&lt;li&gt;(追記) githubにアップロードはmakefileに含まれていた。&lt;/li&gt;
+&lt;li&gt;(追記) githubにアップロードはMakefileに含まれていた。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ make html
 $ make github
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;p&gt;でも良い。&lt;/p&gt;
 &lt;h2&gt;参考&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://qiita.com/akimach/items/dfcac164ac5669a6378://kazukousen.github.io/python-pelican-install.html"&gt;PelicanとGitHub-pagesでブログ開設&lt;/a&gt;&lt;/li&gt;
