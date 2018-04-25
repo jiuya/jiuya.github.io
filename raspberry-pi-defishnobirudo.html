@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title>neovimのset pasteの挙動</title>
+        <title>Raspberry Pi でfishのビルド</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="jiuya">
@@ -30,13 +30,13 @@
         <meta name="twitter:image" content="">
 
     <meta name="twitter:creator" content="jiuya">
-    <meta name="twitter:url" content="/neovimnoset-pastenoju-dong.html">
-    <meta name="twitter:title" content="Hello Blog ~ neovimのset pasteの挙動">
-    <meta name="twitter:description" content="問題点 neovim の :set pasteの挙動がvimのときと反対になってるように見える。 つまり、defaultでインデントがある文字列がそのまま貼り付けできて、:set pasteをするとindentが入ってしまう。 環境 neovim v2.2.0 tmux 2.3 fish 2.7.1 調べる 落ち着いて:help pasteを見てみる。 neovim option This option is obsolete; |bracketed-paste-mode| is built-in. なんかneovimではpaste optionは廃止されているらしい。 brackted-paste-mode とは？ bracketed paste mode xtermの拡張で貼り付け時に文字列の前に&lt;ESC&gt;200~ 後ろに&lt;ESC&gt;201 …">
+    <meta name="twitter:url" content="/raspberry-pi-defishnobirudo.html">
+    <meta name="twitter:title" content="Hello Blog ~ Raspberry Pi でfishのビルド">
+    <meta name="twitter:description" content="動機 自分のメインの環境をfishにしてfishの楽さを知ってしまったのでラズパイにも入れたい。 環境 Raspberry Pi 3 Model B V1.2 rasbian-stretch-lite 2018-04-18 準備 必要なパッケージをインストールする。 $ sudo aptitude install cmake autoconf git g++ libncurses5-dev \ gettext libreadline-dev libeditline-dev doxygen libedit-dev ビルド $ git clone https://github.com/fish-shell/fish-shell.git $ cd fish-shell $ mkdir build $ cd build $ cmake .. -DCMAKE_BUILD_TYPE=Release $ make $ sudo make install">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="Hello Blog ~ neovimのset pasteの挙動"/>
-    <meta property="og:description" content="問題点 neovim の :set pasteの挙動がvimのときと反対になってるように見える。 つまり、defaultでインデントがある文字列がそのまま貼り付けできて、:set pasteをするとindentが入ってしまう。 環境 neovim v2.2.0 tmux 2.3 fish 2.7.1 調べる 落ち着いて:help pasteを見てみる。 neovim option This option is obsolete; |bracketed-paste-mode| is built-in. なんかneovimではpaste optionは廃止されているらしい。 brackted-paste-mode とは？ bracketed paste mode xtermの拡張で貼り付け時に文字列の前に&lt;ESC&gt;200~ 後ろに&lt;ESC&gt;201 …"/>
+    <meta property="og:title" content="Hello Blog ~ Raspberry Pi でfishのビルド"/>
+    <meta property="og:description" content="動機 自分のメインの環境をfishにしてfishの楽さを知ってしまったのでラズパイにも入れたい。 環境 Raspberry Pi 3 Model B V1.2 rasbian-stretch-lite 2018-04-18 準備 必要なパッケージをインストールする。 $ sudo aptitude install cmake autoconf git g++ libncurses5-dev \ gettext libreadline-dev libeditline-dev doxygen libedit-dev ビルド $ git clone https://github.com/fish-shell/fish-shell.git $ cd fish-shell $ mkdir build $ cd build $ cmake .. -DCMAKE_BUILD_TYPE=Release $ make $ sudo make install"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -97,48 +97,36 @@
 <article>
     <section id="content">
         <article>
-            <h2 class="post_title post_detail"><a href="/neovimnoset-pastenoju-dong.html" rel="bookmark"
-                                                  title="Permalink to neovimのset pasteの挙動">neovimのset pasteの挙動</a></h2>
+            <h2 class="post_title post_detail"><a href="/raspberry-pi-defishnobirudo.html" rel="bookmark"
+                                                  title="Permalink to Raspberry Pi でfishのビルド">Raspberry Pi でfishのビルド</a></h2>
             <div class="entry-content blog-post">
-                <h2>問題点</h2>
+                <h2>動機</h2>
 <ul>
-<li>neovim の <code>:set paste</code>の挙動がvimのときと反対になってるように見える。</li>
-<li>つまり、defaultでインデントがある文字列がそのまま貼り付けできて、<code>:set paste</code>をするとindentが入ってしまう。</li>
+<li>自分のメインの環境をfishにしてfishの楽さを知ってしまったのでラズパイにも入れたい。</li>
 </ul>
 <h2>環境</h2>
 <ul>
-<li>neovim v2.2.0</li>
-<li>tmux 2.3</li>
-<li>fish 2.7.1</li>
+<li>Raspberry Pi 3 Model B V1.2</li>
+<li>rasbian-stretch-lite 2018-04-18</li>
 </ul>
-<h2>調べる</h2>
+<h2>準備</h2>
 <ul>
-<li>落ち着いて<code>:help paste</code>を見てみる。</li>
-<li><a href="https://neovim.io/doc/user/options.html#" title="paste">neovim option</a></li>
+<li>必要なパッケージをインストールする。</li>
 </ul>
-<div class="highlight"><pre><span></span>This option is obsolete; |bracketed-paste-mode| is built-in.
+<div class="highlight"><pre><span></span>$ sudo aptitude install cmake autoconf git g++ libncurses5-dev <span class="se">\</span>
+gettext libreadline-dev libeditline-dev doxygen libedit-dev
 </pre></div>
 
 
-<ul>
-<li>なんかneovimではpaste optionは廃止されているらしい。</li>
-<li>brackted-paste-mode とは？</li>
-<li><a href="https://cirw.in/blog/bracketed-paste">bracketed paste mode</a></li>
-<li>xtermの拡張で貼り付け時に文字列の前に<code>&lt;ESC&gt;200~</code> 後ろに<code>&lt;ESC&gt;201~</code> がつくようになる。</li>
-<li>つまり、手で打った文字かpasteした文字かを判別することができる。</li>
-<li><a href="https://srad.jp/~doda/journal/506765/">vim で bracketed paste modeに対応させる記事</a>もあった。</li>
-</ul>
-<h2>結論</h2>
-<ul>
-<li>最近の端末はBracketed Paste Mode に対応しているのでneovimではset pasteする必要はない。</li>
-<li>neovimでset pasteしたときにインデントが入ってしまうのは謎だがobsoleteなんだから使わなければいいや。</li>
-</ul>
-<h2>参考</h2>
-<ul>
-<li><a href="https://neovim.io/doc/user/options.html#" title="paste">neovim option</a></li>
-<li><a href="https://cirw.in/blog/bracketed-paste">bracketed paste mode</a></li>
-<li><a href="http://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h2-Bracketed-Paste-Mode">XTerm Control Sequences</a></li>
-</ul>
+<h2>ビルド</h2>
+<div class="highlight"><pre><span></span>$ git clone https://github.com/fish-shell/fish-shell.git
+$ <span class="nb">cd</span> fish-shell
+$ mkdir build
+$ <span class="nb">cd</span> build
+$ cmake .. -DCMAKE_BUILD_TYPE<span class="o">=</span>Release
+$ make
+$ sudo make install
+</pre></div>
             </div>
             <div class="post_list">
                 <span>By </span>
@@ -146,38 +134,39 @@
                 <span> in </span>
                 <span class="post_category"><a href="/category/develop.html" rel="bookmark"
                                                title="Permalink to develop">[ develop ]</a></span>
-                <span class="post_date">月 23 4月 2018</span>
+                <span class="post_date">火 24 4月 2018</span>
                 <div><span>Tags : </span>
                             <span><a href="/tag/develop.html">#develop, </a></span>
-                            <span><a href="/tag/neovim.html">#neovim, </a></span>
+                            <span><a href="/tag/raspberry-pi.html">#Raspberry Pi, </a></span>
+                            <span><a href="/tag/fish-shell.html">#fish shell, </a></span>
                 </div>
 
                 <div class="entry-social">
                     <span class="twitter"><a target="_blank" rel="nofollow"
                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
                                              title="Twitter"
-                                             href="https://twitter.com/share?url=/neovimnoset-pastenoju-dong.html&text=neovimのset pasteの挙動&via=jiuya"><img
+                                             href="https://twitter.com/share?url=/raspberry-pi-defishnobirudo.html&text=Raspberry Pi でfishのビルド&via=jiuya"><img
                             src="/theme/images/icons/twitter-s.png"></a></span>
 
                     <span class="gplus"><a target="_blank" title="Google +"
-                                           href="https://plus.google.com/share?url=/neovimnoset-pastenoju-dong.html&hl=fr"
+                                           href="https://plus.google.com/share?url=/raspberry-pi-defishnobirudo.html&hl=fr"
                                            rel="nofollow"
                                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="/theme/images/icons/google-s.png"></a></span>
 
                     <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
                                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                              href="https://www.facebook.com/sharer.php?u=/neovimnoset-pastenoju-dong.html&t=neovimのset pasteの挙動"><img
+                                              href="https://www.facebook.com/sharer.php?u=/raspberry-pi-defishnobirudo.html&t=Raspberry Pi でfishのビルド"><img
                             src="/theme/images/icons/facebook-s.png"></a></span>
 
                     <a target="_blank" title="Linkedin"
-                       href="https://www.linkedin.com/shareArticle?mini=true&url=/neovimnoset-pastenoju-dong.html&title=neovimのset pasteの挙動"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=/raspberry-pi-defishnobirudo.html&title=Raspberry Pi でfishのビルド"
                        rel="nofollow"
                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="/theme/images/icons/linkedin-s.png"></a>
 
                     <span class="mail"><a
-                            href="mailto:?subject=neovimのset pasteの挙動&amp;body=Viens découvrir un article à propos de [neovimのset pasteの挙動] sur le site de jiuya. /neovimnoset-pastenoju-dong.html"
+                            href="mailto:?subject=Raspberry Pi でfishのビルド&amp;body=Viens découvrir un article à propos de [Raspberry Pi でfishのビルド] sur le site de jiuya. /raspberry-pi-defishnobirudo.html"
                             title="Share by Email" target="_blank"><img
                             src="/theme/images/icons/mail-s.png"></a></span>
                 </div>

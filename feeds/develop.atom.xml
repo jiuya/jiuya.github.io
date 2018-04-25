@@ -1,5 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - develop</title><link href="/" rel="alternate"></link><link href="/feeds/develop.atom.xml" rel="self"></link><id>/</id><updated>2018-04-23T00:00:00+09:00</updated><entry><title>neovimのset pasteの挙動</title><link href="/neovimnoset-pastenoju-dong.html" rel="alternate"></link><published>2018-04-23T00:00:00+09:00</published><updated>2018-04-23T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-04-23:/neovimnoset-pastenoju-dong.html</id><summary type="html">&lt;h2&gt;問題点&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - develop</title><link href="/" rel="alternate"></link><link href="/feeds/develop.atom.xml" rel="self"></link><id>/</id><updated>2018-04-24T00:00:00+09:00</updated><entry><title>Raspberry Pi でfishのビルド</title><link href="/raspberry-pi-defishnobirudo.html" rel="alternate"></link><published>2018-04-24T00:00:00+09:00</published><updated>2018-04-24T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-04-24:/raspberry-pi-defishnobirudo.html</id><summary type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;自分のメインの環境をfishにしてfishの楽さを知ってしまったのでラズパイにも入れたい。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi 3 Model B V1.2&lt;/li&gt;
+&lt;li&gt;rasbian-stretch-lite 2018-04-18&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;準備&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;必要なパッケージをインストールする。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo aptitude install cmake autoconf git g++ libncurses5-dev &lt;span class="se"&gt;\&lt;/span&gt;
+gettext libreadline-dev libeditline-dev doxygen libedit-dev
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;ビルド&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/fish-shell/fish-shell.git
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; fish-shell
+$ mkdir build
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; build
+$ cmake .. -DCMAKE_BUILD_TYPE&lt;span class="o"&gt;=&lt;/span&gt;Release
+$ make
+$ sudo make install
+&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;自分のメインの環境をfishにしてfishの楽さを知ってしまったのでラズパイにも入れたい。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Raspberry Pi 3 Model B V1.2&lt;/li&gt;
+&lt;li&gt;rasbian-stretch-lite 2018-04-18&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;準備&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;必要なパッケージをインストールする。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo aptitude install cmake autoconf git g++ libncurses5-dev &lt;span class="se"&gt;\&lt;/span&gt;
+gettext libreadline-dev libeditline-dev doxygen libedit-dev
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;ビルド&lt;/h2&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ git clone https://github.com/fish-shell/fish-shell.git
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; fish-shell
+$ mkdir build
+$ &lt;span class="nb"&gt;cd&lt;/span&gt; build
+$ cmake .. -DCMAKE_BUILD_TYPE&lt;span class="o"&gt;=&lt;/span&gt;Release
+$ make
+$ sudo make install
+&lt;/pre&gt;&lt;/div&gt;</content><category term="develop"></category><category term="Raspberry Pi"></category><category term="fish shell"></category></entry><entry><title>neovimのset pasteの挙動</title><link href="/neovimnoset-pastenoju-dong.html" rel="alternate"></link><published>2018-04-23T00:00:00+09:00</published><updated>2018-04-23T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-04-23:/neovimnoset-pastenoju-dong.html</id><summary type="html">&lt;h2&gt;問題点&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;neovim の &lt;code&gt;:set paste&lt;/code&gt;の挙動がvimのときと反対になってるように見える。&lt;/li&gt;
 &lt;li&gt;つまり、defaultでインデントがある文字列がそのまま貼り付けできて、&lt;code&gt;:set paste&lt;/code&gt;をするとindentが入ってしまう。&lt;/li&gt;
@@ -61,4 +113,4 @@
 &lt;li&gt;&lt;a href="https://neovim.io/doc/user/options.html#" title="paste"&gt;neovim option&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://cirw.in/blog/bracketed-paste"&gt;bracketed paste mode&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://invisible-island.net/xterm/ctlseqs/ctlseqs.html#h2-Bracketed-Paste-Mode"&gt;XTerm Control Sequences&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content></entry></feed>
+&lt;/ul&gt;</content><category term="develop"></category><category term="neovim"></category></entry></feed>
