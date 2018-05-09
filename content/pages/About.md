@@ -29,7 +29,7 @@ Date: 2018-01-09
 - Mbed
 - Arduino
 - Flask(Python)
-    - [絵文字ジェネレーター](https://emoji.pine.moe)で使用
+    - [絵文字ジェネレーター](https://emoji-gen.ninja)で使用
 - wxPython
 - OpenCV
     - 大学の卒業研究時に使用した
