@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - develop</title><link href="/" rel="alternate"></link><link href="/feeds/develop.atom.xml" rel="self"></link><id>/</id><updated>2018-04-24T00:00:00+09:00</updated><entry><title>Raspberry Pi でfishのビルド</title><link href="/raspberry-pi-defishnobirudo.html" rel="alternate"></link><published>2018-04-24T00:00:00+09:00</published><updated>2018-04-24T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-04-24:/raspberry-pi-defishnobirudo.html</id><summary type="html">&lt;h2&gt;動機&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - develop</title><link href="/" rel="alternate"></link><link href="/feeds/develop.atom.xml" rel="self"></link><id>/</id><updated>2018-05-09T00:00:00+09:00</updated><entry><title>debianのtmuxを2.7にアップデート</title><link href="/debiannotmuxwo27niatsupudeto.html" rel="alternate"></link><published>2018-05-09T00:00:00+09:00</published><updated>2018-05-09T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-05-09:/debiannotmuxwo27niatsupudeto.html</id><summary type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/tmux-plugins/tmux-copycat"&gt;tmux-plugins/tmux-copycat&lt;/a&gt;が使いたいがtmux2.3だと動かなかったのでアップデートする。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Debian 9.4 stable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;インストール&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Debian stableのパッケージはtmux2.3なのでtestingからパッケージを取ってくる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/apt/sources.list&lt;/code&gt; にtesting パッケージを追加する。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;# testing&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://debian-mirror.sakura.ne.jp/debian/&lt;/span&gt; &lt;span class="kp"&gt;testing&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;contrib&lt;/span&gt; &lt;span class="kp"&gt;non-free&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://debian-mirror.sakura.ne.jp/debian/&lt;/span&gt; &lt;span class="kp"&gt;testing&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;contrib&lt;/span&gt; &lt;span class="kp"&gt;non-free&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;インストールする。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt update
+$ sudo apt install …&lt;/pre&gt;&lt;/div&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://github.com/tmux-plugins/tmux-copycat"&gt;tmux-plugins/tmux-copycat&lt;/a&gt;が使いたいがtmux2.3だと動かなかったのでアップデートする。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Debian 9.4 stable&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;インストール&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Debian stableのパッケージはtmux2.3なのでtestingからパッケージを取ってくる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/etc/apt/sources.list&lt;/code&gt; にtesting パッケージを追加する。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="c"&gt;# testing&lt;/span&gt;
+&lt;span class="k"&gt;deb&lt;/span&gt; &lt;span class="s"&gt;http://debian-mirror.sakura.ne.jp/debian/&lt;/span&gt; &lt;span class="kp"&gt;testing&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;contrib&lt;/span&gt; &lt;span class="kp"&gt;non-free&lt;/span&gt;
+&lt;span class="k"&gt;deb-src&lt;/span&gt; &lt;span class="s"&gt;http://debian-mirror.sakura.ne.jp/debian/&lt;/span&gt; &lt;span class="kp"&gt;testing&lt;/span&gt; &lt;span class="kp"&gt;main&lt;/span&gt; &lt;span class="kp"&gt;contrib&lt;/span&gt; &lt;span class="kp"&gt;non-free&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;インストールする。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt update
+$ sudo apt install tmux/testing
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;libc6 のバージョンが低いと怒られるのでlibc6をアップデートする。&lt;/li&gt;
+&lt;li&gt;そのままでは入らないので、依存関係を楽に解決するためにaptitudeを使用する。&lt;/li&gt;
+&lt;li&gt;良さげな解決方法を採用する。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo aptitude install libc6-dev/testing libc6/testing
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;ul&gt;
+&lt;li&gt;その後もう一回やると入る。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;$ sudo apt install tmux/testing
+$ tmux -V
+tmux &lt;span class="m"&gt;2&lt;/span&gt;.7
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;h2&gt;雑感&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;stableでlibc6上げるようなことするなら最初からtesting使っていれば良かったのでは？&lt;/li&gt;
+&lt;li&gt;Desktop環境で次使うときはtestingにしたい。（Debian 10 busterがどうなるかによるけど）&lt;/li&gt;
+&lt;/ul&gt;</content><category term="develop"></category><category term="tmux"></category><category term="debian"></category></entry><entry><title>Raspberry Pi でfishのビルド</title><link href="/raspberry-pi-defishnobirudo.html" rel="alternate"></link><published>2018-04-24T00:00:00+09:00</published><updated>2018-04-24T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-04-24:/raspberry-pi-defishnobirudo.html</id><summary type="html">&lt;h2&gt;動機&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;自分のメインの環境をfishにしてfishの楽さを知ってしまったのでラズパイにも入れたい。&lt;/li&gt;
 &lt;/ul&gt;
