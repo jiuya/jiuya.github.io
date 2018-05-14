@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - develop</title><link href="/" rel="alternate"></link><link href="/feeds/develop.atom.xml" rel="self"></link><id>/</id><updated>2018-05-09T00:00:00+09:00</updated><entry><title>debianのtmuxを2.7にアップデート</title><link href="/debiannotmuxwo27niatsupudeto.html" rel="alternate"></link><published>2018-05-09T00:00:00+09:00</published><updated>2018-05-09T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-05-09:/debiannotmuxwo27niatsupudeto.html</id><summary type="html">&lt;h2&gt;動機&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - develop</title><link href="/" rel="alternate"></link><link href="/feeds/develop.atom.xml" rel="self"></link><id>/</id><updated>2018-05-14T00:00:00+09:00</updated><entry><title>debianでDNS解決にIPv4を優先させる</title><link href="/debiandednsjie-jue-niipv4woyou-xian-saseru.html" rel="alternate"></link><published>2018-05-14T00:00:00+09:00</published><updated>2018-05-14T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-05-14:/debiandednsjie-jue-niipv4woyou-xian-saseru.html</id><summary type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;p&gt;会社のネットワークで何故かIPv6が通らなくなったから。&lt;/p&gt;
+&lt;h2&gt;IPv4を優先させる&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;/etc/gai.conf&lt;/code&gt; を開き以下のコメントアウトを外す。（なければ追加する）&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#precedence ::ffff:0:0/96  100
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;再起動したらIPv4が優先になる。&lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;p&gt;会社のネットワークで何故かIPv6が通らなくなったから。&lt;/p&gt;
+&lt;h2&gt;IPv4を優先させる&lt;/h2&gt;
+&lt;p&gt;&lt;code&gt;/etc/gai.conf&lt;/code&gt; を開き以下のコメントアウトを外す。（なければ追加する）&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;#precedence ::ffff:0:0/96  100
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;再起動したらIPv4が優先になる。&lt;/p&gt;</content><category term="develop"></category><category term="network"></category><category term="debian"></category></entry><entry><title>debianのtmuxを2.7にアップデート</title><link href="/debiannotmuxwo27niatsupudeto.html" rel="alternate"></link><published>2018-05-09T00:00:00+09:00</published><updated>2018-05-09T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-05-09:/debiannotmuxwo27niatsupudeto.html</id><summary type="html">&lt;h2&gt;動機&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="https://github.com/tmux-plugins/tmux-copycat"&gt;tmux-plugins/tmux-copycat&lt;/a&gt;が使いたいがtmux2.3だと動かなかったのでアップデートする。&lt;/li&gt;
 &lt;/ul&gt;
