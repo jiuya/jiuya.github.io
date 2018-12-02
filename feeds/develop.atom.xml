@@ -1,60 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - develop</title><link href="/" rel="alternate"></link><link href="/feeds/develop.atom.xml" rel="self"></link><id>/</id><updated>2018-12-03T00:00:00+09:00</updated><entry><title>自分の開発環境</title><link href="/zi-fen-nokai-fa-huan-jing.html" rel="alternate"></link><published>2018-12-03T00:00:00+09:00</published><updated>2018-12-03T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-12-03:/zi-fen-nokai-fa-huan-jing.html</id><summary type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/2959"&gt;高知工科大 Advent Calendar 2018&lt;/a&gt;の三日目の記事です。&lt;/p&gt;
-&lt;h2&gt;初めに&lt;/h2&gt;
-&lt;p&gt;いよいよ毎年恒例Advent Calendarの時期がやってきました。&lt;/p&gt;
+&lt;h2&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;いよいよ毎年恒例&lt;strong&gt;Advent Calendar&lt;/strong&gt;の時期がやってきました。&lt;/p&gt;
 &lt;p&gt;これといって書くことが思いつかなかったので2018年の自分の開発環境(Linux)でも書こうと思います。&lt;/p&gt;
-&lt;p&gt;主にマイコンの開発や組み込みLinuxの開発に使用してます。&lt;/p&gt;
+&lt;p&gt;この開発環境では主にマイコンの開発や組み込みLinuxの開発に使用してます。&lt;/p&gt;
 &lt;h2&gt;PC&lt;/h2&gt;
-&lt;p&gt;PCはThinkPad X250を使用してます。
-メモリが4GB(少ねぇ)でCPUがi5-5300Uです。重い作業はメインPC(Windows)でやらせるのでスペックは抑えめです。そのうちメモリ8GBにはしたいです。&lt;/p&gt;
+&lt;p&gt;PCは&lt;strong&gt;ThinkPad X250&lt;/strong&gt;を使用してます。&lt;br&gt;
+メモリが4GB(少ねぇ)でCPUがi5-5300Uです。  重い作業はメインPC(Windows)でやらせるのでスペックは抑えめです。&lt;br&gt;
+そのうちメモリ8GBにしたい。&lt;/p&gt;
 &lt;h2&gt;ディストリビューション&lt;/h2&gt;
-&lt;p&gt;OSはDebianのStable(stretch)です。
+&lt;p&gt;OSは&lt;strong&gt;DebianのStable&lt;/strong&gt;(stretch)です。&lt;br&gt;
 Debianを選択した理由は主に以下の点です。
 - Ubuntu Desktopと比べていらないものが入ってない。
 - Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。
 - Gentooと比べて非力なPCでも初期セットアップが早い。
 - Archはpacmanに慣れることができなかった。&lt;/p&gt;
-&lt;p&gt;サービスマネージャはDebianのdefaultのsystemdを使用しています。&lt;/p&gt;
+&lt;p&gt;サービスマネージャはDebianのdefaultの&lt;strong&gt;systemd&lt;/strong&gt;を使用しています。&lt;/p&gt;
 &lt;h2&gt;ディスプレイマネージャ、ウィンドウマネージャ&lt;/h2&gt;
-&lt;p&gt;ディスプレイマネージャはLightDMです。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない。&lt;/p&gt;
-&lt;p&gt;ウィンドウマネージャはタイル型ウィンドウマネージャのi3wmです。&lt;br&gt;
-タイル型ウィンドウマネージャとはWindowsなどのようにウィンドウが重なることがなくタイル状に等間隔に配置されるウィンドウマネージャの総称です。&lt;br&gt;
-i3の選択理由は以下の点です。
-- ほぼキーボードで作業できる。一応マウスも使える。(自分のキーバインドでは&lt;code&gt;Windows key + Enter …&lt;/code&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/2959"&gt;高知工科大 Advent Calendar 2018&lt;/a&gt;の三日目の記事です。&lt;/p&gt;
-&lt;h2&gt;初めに&lt;/h2&gt;
-&lt;p&gt;いよいよ毎年恒例Advent Calendarの時期がやってきました。&lt;/p&gt;
+&lt;p&gt;ディスプレイマネージャは&lt;strong&gt;LightDM&lt;/strong&gt;です。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない …&lt;/p&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/2959"&gt;高知工科大 Advent Calendar 2018&lt;/a&gt;の三日目の記事です。&lt;/p&gt;
+&lt;h2&gt;はじめに&lt;/h2&gt;
+&lt;p&gt;いよいよ毎年恒例&lt;strong&gt;Advent Calendar&lt;/strong&gt;の時期がやってきました。&lt;/p&gt;
 &lt;p&gt;これといって書くことが思いつかなかったので2018年の自分の開発環境(Linux)でも書こうと思います。&lt;/p&gt;
-&lt;p&gt;主にマイコンの開発や組み込みLinuxの開発に使用してます。&lt;/p&gt;
+&lt;p&gt;この開発環境では主にマイコンの開発や組み込みLinuxの開発に使用してます。&lt;/p&gt;
 &lt;h2&gt;PC&lt;/h2&gt;
-&lt;p&gt;PCはThinkPad X250を使用してます。
-メモリが4GB(少ねぇ)でCPUがi5-5300Uです。重い作業はメインPC(Windows)でやらせるのでスペックは抑えめです。そのうちメモリ8GBにはしたいです。&lt;/p&gt;
+&lt;p&gt;PCは&lt;strong&gt;ThinkPad X250&lt;/strong&gt;を使用してます。&lt;br&gt;
+メモリが4GB(少ねぇ)でCPUがi5-5300Uです。  重い作業はメインPC(Windows)でやらせるのでスペックは抑えめです。&lt;br&gt;
+そのうちメモリ8GBにしたい。&lt;/p&gt;
 &lt;h2&gt;ディストリビューション&lt;/h2&gt;
-&lt;p&gt;OSはDebianのStable(stretch)です。
+&lt;p&gt;OSは&lt;strong&gt;DebianのStable&lt;/strong&gt;(stretch)です。&lt;br&gt;
 Debianを選択した理由は主に以下の点です。
 - Ubuntu Desktopと比べていらないものが入ってない。
 - Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。
 - Gentooと比べて非力なPCでも初期セットアップが早い。
 - Archはpacmanに慣れることができなかった。&lt;/p&gt;
-&lt;p&gt;サービスマネージャはDebianのdefaultのsystemdを使用しています。&lt;/p&gt;
+&lt;p&gt;サービスマネージャはDebianのdefaultの&lt;strong&gt;systemd&lt;/strong&gt;を使用しています。&lt;/p&gt;
 &lt;h2&gt;ディスプレイマネージャ、ウィンドウマネージャ&lt;/h2&gt;
-&lt;p&gt;ディスプレイマネージャはLightDMです。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない。&lt;/p&gt;
+&lt;p&gt;ディスプレイマネージャは&lt;strong&gt;LightDM&lt;/strong&gt;です。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない。&lt;/p&gt;
 &lt;p&gt;ウィンドウマネージャはタイル型ウィンドウマネージャのi3wmです。&lt;br&gt;
 タイル型ウィンドウマネージャとはWindowsなどのようにウィンドウが重なることがなくタイル状に等間隔に配置されるウィンドウマネージャの総称です。&lt;br&gt;
 i3の選択理由は以下の点です。
-- ほぼキーボードで作業できる。一応マウスも使える。(自分のキーバインドでは&lt;code&gt;Windows key + Enter&lt;/code&gt;でターミナルが開く、&lt;code&gt;Windows key + →&lt;/code&gt;でウィンドウ移動など)
+- ほぼキーボードで作業できる。一応マウスも使える。(自分のキーバインドでは&lt;strong&gt;Windows key + Enter&lt;/strong&gt;でターミナルが開く、&lt;strong&gt;Windows key + →&lt;/strong&gt;でウィンドウ移動など)
 - ダイアログウインドウなどは普通のデスクトップ環境と同じように使える。ダイアログでないウインドウもショートカットキーでタイル化解除(フローティング化)させることが可能。  &lt;/p&gt;
-&lt;p&gt;&lt;code&gt;Windows key + Enter&lt;/code&gt; でターミナルを開らける快感を覚えると戻って来れなくなります。&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;Windows key + Enter&lt;/strong&gt; でターミナルを開らける快感を覚えると戻って来れなくなります。&lt;br&gt;
 詳細は他のサイトに譲ります。&lt;br&gt;
 &lt;a href="https://trap.jp/post/425/"&gt;タイル型ウインドウマネージャーが凄い - i3wm&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;ターミナル環境&lt;/h2&gt;
-&lt;p&gt;使用しているターミナルは&lt;a href="https://launchpad.net/sakura"&gt;Sakura&lt;/a&gt;を使用してます。&lt;br&gt;
+&lt;p&gt;使用しているターミナルは&lt;a href="https://launchpad.net/sakura"&gt;&lt;strong&gt;Sakura&lt;/strong&gt;&lt;/a&gt;を使用してます。&lt;br&gt;
 テキストエディタでもサーバーの会社でもないです。&lt;br&gt;
-&lt;code&gt;libvte(gnome-terminal)&lt;/code&gt;ベースの端末エミュレータです。&lt;br&gt;
+&lt;strong&gt;libvte&lt;/strong&gt;(gnome-terminal)ベースの端末エミュレータです。&lt;br&gt;
 画面分割やタブなどの機能はtmuxやvimなどで行うので、シンプルなlibvteベースのターミナルがほしかったのでこれにしました。&lt;/p&gt;
 &lt;h2&gt;tmux&lt;/h2&gt;
 &lt;p&gt;昔はscreenを使っていましたが今はtmuxです。&lt;br&gt;
-prefixは&lt;code&gt;Ctrl+a&lt;/code&gt;にしています。Caps LockをCtrlに割り当てているので、そこから近いaを選択しているだけです。minicomのdefaultのprefixと被っているのがちょっと問題ではあります。  &lt;/p&gt;
-&lt;p&gt;tpmを使ってplugin管理もしてます。
+prefixは&lt;strong&gt;Ctrl+a&lt;/strong&gt;にしています。Caps LockをCtrlに割り当てているので、そこから近いaを選択しているだけです。minicomのdefaultのprefixと被っているのがちょっと問題ではあります。  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;tpm&lt;/strong&gt;を使ってplugin管理もしてます。
 以下が入れているpluginです。&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;set -g @tpm_plugins &amp;#39;               \
  tmux-plugins/tpm                   \
@@ -69,10 +67,10 @@ prefixは&lt;code&gt;Ctrl+a&lt;/code&gt;にしています。Caps LockをCtrlに
 &lt;/pre&gt;&lt;/div&gt;
 
 
-&lt;p&gt;&lt;code&gt;tmux-yank&lt;/code&gt;や&lt;code&gt;tmux-copycat&lt;/code&gt;などのコピー系プラグインは端末に表示されているすべての情報を簡単にコピーペーストできるので非常に便利です。  &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;tmux-yank&lt;/strong&gt;や&lt;strong&gt;tmux-copycat&lt;/strong&gt;などのコピー系プラグインは端末に表示されているすべての情報を簡単にコピーペーストできるので非常に便利です。  &lt;/p&gt;
 &lt;h2&gt;shell&lt;/h2&gt;
-&lt;p&gt;shellはfish shell+neovimを使用しています。&lt;br&gt;
-パッケージ管理にはFishermanを使用してます。&lt;br&gt;
+&lt;p&gt;shellは&lt;strong&gt;fish shell+neovim&lt;/strong&gt;を使用しています。&lt;br&gt;
+パッケージ管理には&lt;strong&gt;Fisherman&lt;/strong&gt;を使用してます。&lt;br&gt;
 fish は特に設定しなくても見やすくて使いやすいシェルになるのでおすすめです。&lt;br&gt;
 ただbashやzshの記法に慣れているとパイプとかリダイレクトとかで自分はよく間違えるのでその辺はめんどくさいです。&lt;/p&gt;
 &lt;h2&gt;おわりに&lt;/h2&gt;
