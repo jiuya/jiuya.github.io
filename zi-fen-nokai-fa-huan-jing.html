@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="japanese" itemscope itemtype="http://schema.org/Person">
+<head>
+            <meta charset="utf-8">
+        <!-- Site Meta Data -->
+        <title>自分の開発環境</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="jiuya">
+
+        <link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/6884687?s=460&v=4">
+
+        <!-- schema.org -->
+        <meta itemprop="name" content="Hello Blog">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Style Meta Data -->
+        <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css"/>
+
+        <!-- Feed Meta Data -->
+            <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+                  title="Hello Blog ATOM Feed"/>
+
+        <!-- Twitter Feed -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="jiuya">
+        <meta name="twitter:image" content="">
+
+    <meta name="twitter:creator" content="jiuya">
+    <meta name="twitter:url" content="/zi-fen-nokai-fa-huan-jing.html">
+    <meta name="twitter:title" content="Hello Blog ~ 自分の開発環境">
+    <meta name="twitter:description" content="この記事は高知工科大 Advent Calendar 2018の三日目の記事です。 初めに いよいよ毎年恒例Advent Calendarの時期がやってきました。 これといって書くことが思いつかなかったので2018年の自分の開発環境(Linux)でも書こうと思います。 主にマイコンの開発や組み込みLinuxの開発に使用してます。 PC PCはThinkPad X250を使用してます。 メモリが4GB(少ねぇ)でCPUがi5-5300Uです。重い作業はメインPC(Windows)でやらせるのでスペックは抑えめです。そのうちメモリ8GBにはしたいです。 ディストリビューション OSはDebianのStable(stretch)です。 Debianを選択した理由は主に以下の点です。 - Ubuntu Desktopと比べていらないものが入ってない。 - Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。 - Gentooと比べて非力なPCでも初期セットアップが早い。 - Archはpacmanに慣れることができなかった。 サービスマネージャはDebianのdefaultのsystemdを使用しています。 ディスプレイマネージャ、ウィンドウマネージャ ディスプレイマネージャはLightDMです。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない。 ウィンドウマネージャはタイル型ウィンドウマネージャのi3wmです。 タイル型ウィンドウマネージャとはWindowsなどのようにウィンドウが重なることがなくタイル状に等間隔に配置されるウィンドウマネージャの総称です。 i3の選択理由は以下の点です。 - ほぼキーボードで作業できる。一応マウスも使える。(自分のキーバインドではWindows key + Enter …">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Hello Blog ~ 自分の開発環境"/>
+    <meta property="og:description" content="この記事は高知工科大 Advent Calendar 2018の三日目の記事です。 初めに いよいよ毎年恒例Advent Calendarの時期がやってきました。 これといって書くことが思いつかなかったので2018年の自分の開発環境(Linux)でも書こうと思います。 主にマイコンの開発や組み込みLinuxの開発に使用してます。 PC PCはThinkPad X250を使用してます。 メモリが4GB(少ねぇ)でCPUがi5-5300Uです。重い作業はメインPC(Windows)でやらせるのでスペックは抑えめです。そのうちメモリ8GBにはしたいです。 ディストリビューション OSはDebianのStable(stretch)です。 Debianを選択した理由は主に以下の点です。 - Ubuntu Desktopと比べていらないものが入ってない。 - Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。 - Gentooと比べて非力なPCでも初期セットアップが早い。 - Archはpacmanに慣れることができなかった。 サービスマネージャはDebianのdefaultのsystemdを使用しています。 ディスプレイマネージャ、ウィンドウマネージャ ディスプレイマネージャはLightDMです。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない。 ウィンドウマネージャはタイル型ウィンドウマネージャのi3wmです。 タイル型ウィンドウマネージャとはWindowsなどのようにウィンドウが重なることがなくタイル状に等間隔に配置されるウィンドウマネージャの総称です。 i3の選択理由は以下の点です。 - ほぼキーボードで作業できる。一応マウスも使える。(自分のキーバインドではWindows key + Enter …"/>
+    <meta property="og:image" content=""/>
+</head>
+
+<body>
+<!-- Sidebar -->
+<aside>
+    <!--<center><a href=""><img id="avatar" src=""></a></center>-->
+    <h1>Hello Blog</h1>
+        <p>Embedded Programmer</p>
+    <br>
+
+        <a class="twitter-follow-button"
+           href="https://twitter.com/jiuya"
+           data-show-count="false"
+           data-lang="en">
+            Follow @twitterdev
+        </a>
+        <script type="text/javascript">
+            window.twttr = (function (d, s, id) {
+                var t, js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                return window.twttr || (t = {
+                        _e: [], ready: function (f) {
+                            t._e.push(f)
+                        }
+                    });
+            }(document, "script", "twitter-wjs"));
+        </script>
+
+    <nav class="nav">
+        <ul class="list-bare">
+
+                <li><a class="nav__link" href="https://jiuya.github.io">Blog</a></li>
+
+                <li><a class="nav__link" href="/pages/about.html">About</a></li>
+
+        </ul>
+    </nav>
+
+    <p class="social">
+                <a href="https://github.com/jiuya" target="_blank"><img
+                        src="/theme/images/icons/github.png"></a>
+                <a href="https://twitter.com/jiuya" target="_blank"><img
+                        src="/theme/images/icons/twitter.png"></a>
+            <a href="/feeds/all.atom.xml" rel="alternate">
+                <img src="/theme/images/icons/rss.png"></a>
+    </p>
+
+
+
+</aside>
+
+<!-- Content -->
+<article>
+    <section id="content">
+        <article>
+            <h2 class="post_title post_detail"><a href="/zi-fen-nokai-fa-huan-jing.html" rel="bookmark"
+                                                  title="Permalink to 自分の開発環境">自分の開発環境</a></h2>
+            <div class="entry-content blog-post">
+                <p>この記事は<a href="https://adventar.org/calendars/2959">高知工科大 Advent Calendar 2018</a>の三日目の記事です。</p>
+<h2>初めに</h2>
+<p>いよいよ毎年恒例Advent Calendarの時期がやってきました。</p>
+<p>これといって書くことが思いつかなかったので2018年の自分の開発環境(Linux)でも書こうと思います。</p>
+<p>主にマイコンの開発や組み込みLinuxの開発に使用してます。</p>
+<h2>PC</h2>
+<p>PCはThinkPad X250を使用してます。
+メモリが4GB(少ねぇ)でCPUがi5-5300Uです。重い作業はメインPC(Windows)でやらせるのでスペックは抑えめです。そのうちメモリ8GBにはしたいです。</p>
+<h2>ディストリビューション</h2>
+<p>OSはDebianのStable(stretch)です。
+Debianを選択した理由は主に以下の点です。
+- Ubuntu Desktopと比べていらないものが入ってない。
+- Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。
+- Gentooと比べて非力なPCでも初期セットアップが早い。
+- Archはpacmanに慣れることができなかった。</p>
+<p>サービスマネージャはDebianのdefaultのsystemdを使用しています。</p>
+<h2>ディスプレイマネージャ、ウィンドウマネージャ</h2>
+<p>ディスプレイマネージャはLightDMです。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない。</p>
+<p>ウィンドウマネージャはタイル型ウィンドウマネージャのi3wmです。<br>
+タイル型ウィンドウマネージャとはWindowsなどのようにウィンドウが重なることがなくタイル状に等間隔に配置されるウィンドウマネージャの総称です。<br>
+i3の選択理由は以下の点です。
+- ほぼキーボードで作業できる。一応マウスも使える。(自分のキーバインドでは<code>Windows key + Enter</code>でターミナルが開く、<code>Windows key + →</code>でウィンドウ移動など)
+- ダイアログウインドウなどは普通のデスクトップ環境と同じように使える。ダイアログでないウインドウもショートカットキーでタイル化解除(フローティング化)させることが可能。  </p>
+<p><code>Windows key + Enter</code> でターミナルを開らける快感を覚えると戻って来れなくなります。<br>
+詳細は他のサイトに譲ります。<br>
+<a href="https://trap.jp/post/425/">タイル型ウインドウマネージャーが凄い - i3wm</a></p>
+<h2>ターミナル環境</h2>
+<p>使用しているターミナルは<a href="https://launchpad.net/sakura">Sakura</a>を使用してます。<br>
+テキストエディタでもサーバーの会社でもないです。<br>
+<code>libvte(gnome-terminal)</code>ベースの端末エミュレータです。<br>
+画面分割やタブなどの機能はtmuxやvimなどで行うので、シンプルなlibvteベースのターミナルがほしかったのでこれにしました。</p>
+<h2>tmux</h2>
+<p>昔はscreenを使っていましたが今はtmuxです。<br>
+prefixは<code>Ctrl+a</code>にしています。Caps LockをCtrlに割り当てているので、そこから近いaを選択しているだけです。minicomのdefaultのprefixと被っているのがちょっと問題ではあります。  </p>
+<p>tpmを使ってplugin管理もしてます。
+以下が入れているpluginです。</p>
+<div class="highlight"><pre><span></span>set -g @tpm_plugins &#39;               \
+ tmux-plugins/tpm                   \
+ tmux-plugins/tmux-yank             \
+ tmux-plugins/tmux-open             \
+ tmux-plugins/tmux-resurrect        \
+ tmux-plugins/tmux-battery          \
+ tmux-plugins/tmux-pain-control     \
+ tmux-plugins/tmux-copycat          \
+ tmux-plugins/tmux-prefix-highlight \
+&#39;
+</pre></div>
+
+
+<p><code>tmux-yank</code>や<code>tmux-copycat</code>などのコピー系プラグインは端末に表示されているすべての情報を簡単にコピーペーストできるので非常に便利です。  </p>
+<h2>shell</h2>
+<p>shellはfish shell+neovimを使用しています。<br>
+パッケージ管理にはFishermanを使用してます。<br>
+fish は特に設定しなくても見やすくて使いやすいシェルになるのでおすすめです。<br>
+ただbashやzshの記法に慣れているとパイプとかリダイレクトとかで自分はよく間違えるのでその辺はめんどくさいです。</p>
+<h2>おわりに</h2>
+<p>2018年は転職?したりといろいろ変化のあった年だったので開発環境の入れ替えなどをしました。<br>
+この辺の情報はすぐトレンドが移るのでこれからもキャッチアップし続けれる人間になりたいなーと思いました。<br>
+書くの疲れたのでこの辺で終わります。</p>
+            </div>
+            <div class="post_list">
+                <span>By </span>
+                <a href="/author/jiuya.html">@jiuya</a>
+                <span> in </span>
+                <span class="post_category"><a href="/category/develop.html" rel="bookmark"
+                                               title="Permalink to develop">[ develop ]</a></span>
+                <span class="post_date">月 03 12月 2018</span>
+                <div><span>Tags : </span>
+                            <span><a href="/tag/develop.html">#develop, </a></span>
+                            <span><a href="/tag/debian.html">#debian, </a></span>
+                            <span><a href="/tag/i3wm.html">#i3wm, </a></span>
+                </div>
+
+                <div class="entry-social">
+                    <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=/zi-fen-nokai-fa-huan-jing.html&text=自分の開発環境&via=jiuya"><img
+                            src="/theme/images/icons/twitter-s.png"></a></span>
+
+                    <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=/zi-fen-nokai-fa-huan-jing.html&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="/theme/images/icons/google-s.png"></a></span>
+
+                    <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=/zi-fen-nokai-fa-huan-jing.html&t=自分の開発環境"><img
+                            src="/theme/images/icons/facebook-s.png"></a></span>
+
+                    <a target="_blank" title="Linkedin"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=/zi-fen-nokai-fa-huan-jing.html&title=自分の開発環境"
+                       rel="nofollow"
+                       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="/theme/images/icons/linkedin-s.png"></a>
+
+                    <span class="mail"><a
+                            href="mailto:?subject=自分の開発環境&amp;body=Viens découvrir un article à propos de [自分の開発環境] sur le site de jiuya. /zi-fen-nokai-fa-huan-jing.html"
+                            title="Share by Email" target="_blank"><img
+                            src="/theme/images/icons/mail-s.png"></a></span>
+                </div>
+            </div>
+        </article>
+    </section>
+</article>
+
+<!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
+                href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+
+
+</body>
+</html>
