@@ -10,11 +10,13 @@
 そのうちメモリ8GBにしたい。&lt;/p&gt;
 &lt;h2&gt;ディストリビューション&lt;/h2&gt;
 &lt;p&gt;OSは&lt;strong&gt;DebianのStable&lt;/strong&gt;(stretch)です。&lt;br&gt;
-Debianを選択した理由は主に以下の点です。
-- Ubuntu Desktopと比べていらないものが入ってない。
-- Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。
-- Gentooと比べて非力なPCでも初期セットアップが早い。
-- Archはpacmanに慣れることができなかった。&lt;/p&gt;
+Debianを選択した理由は主に以下の点です。  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ubuntu Desktopと比べていらないものが入ってない。&lt;/li&gt;
+&lt;li&gt;Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。&lt;/li&gt;
+&lt;li&gt;Gentooと比べて非力なPCでも初期セットアップが早い。&lt;/li&gt;
+&lt;li&gt;Archはpacmanに慣れることができなかった。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;サービスマネージャはDebianのdefaultの&lt;strong&gt;systemd&lt;/strong&gt;を使用しています。&lt;/p&gt;
 &lt;h2&gt;ディスプレイマネージャ、ウィンドウマネージャ&lt;/h2&gt;
 &lt;p&gt;ディスプレイマネージャは&lt;strong&gt;LightDM&lt;/strong&gt;です。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない …&lt;/p&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/2959"&gt;高知工科大 Advent Calendar 2018&lt;/a&gt;の三日目の記事です。&lt;/p&gt;
@@ -28,11 +30,13 @@ Debianを選択した理由は主に以下の点です。
 そのうちメモリ8GBにしたい。&lt;/p&gt;
 &lt;h2&gt;ディストリビューション&lt;/h2&gt;
 &lt;p&gt;OSは&lt;strong&gt;DebianのStable&lt;/strong&gt;(stretch)です。&lt;br&gt;
-Debianを選択した理由は主に以下の点です。
-- Ubuntu Desktopと比べていらないものが入ってない。
-- Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。
-- Gentooと比べて非力なPCでも初期セットアップが早い。
-- Archはpacmanに慣れることができなかった。&lt;/p&gt;
+Debianを選択した理由は主に以下の点です。  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Ubuntu Desktopと比べていらないものが入ってない。&lt;/li&gt;
+&lt;li&gt;Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。&lt;/li&gt;
+&lt;li&gt;Gentooと比べて非力なPCでも初期セットアップが早い。&lt;/li&gt;
+&lt;li&gt;Archはpacmanに慣れることができなかった。&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;サービスマネージャはDebianのdefaultの&lt;strong&gt;systemd&lt;/strong&gt;を使用しています。&lt;/p&gt;
 &lt;h2&gt;ディスプレイマネージャ、ウィンドウマネージャ&lt;/h2&gt;
 &lt;p&gt;ディスプレイマネージャは&lt;strong&gt;LightDM&lt;/strong&gt;です。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない。&lt;/p&gt;
