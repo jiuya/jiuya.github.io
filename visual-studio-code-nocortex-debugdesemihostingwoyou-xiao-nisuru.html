@@ -3,7 +3,7 @@
 <head>
             <meta charset="utf-8">
         <!-- Site Meta Data -->
-        <title>Raspberry Pi でfishのビルド</title>
+        <title>Visual Studio Code のCortex-DebugでSemihostingを有効にする</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
         <meta name="author" content="jiuya">
@@ -30,13 +30,13 @@
         <meta name="twitter:image" content="">
 
     <meta name="twitter:creator" content="jiuya">
-    <meta name="twitter:url" content="/raspberry-pi-defishnobirudo.html">
-    <meta name="twitter:title" content="Hello Blog ~ Raspberry Pi でfishのビルド">
-    <meta name="twitter:description" content="動機 自分のメインの環境をfishにしてfishの楽さを知ってしまったのでラズパイにも入れたい。 環境 Raspberry Pi 3 Model B V1.2 rasbian-stretch-lite 2018-04-18 準備 必要なパッケージをインストールする。 $ sudo aptitude install cmake autoconf git g++ libncurses5-dev \ gettext libreadline-dev libeditline-dev doxygen libedit-dev ビルド $ git clone https://github.com/fish-shell/fish-shell.git $ cd fish-shell $ mkdir build $ cd build $ cmake .. -DCMAKE_BUILD_TYPE=Release $ make $ sudo make install">
+    <meta name="twitter:url" content="/visual-studio-code-nocortex-debugdesemihostingwoyou-xiao-nisuru.html">
+    <meta name="twitter:title" content="Hello Blog ~ Visual Studio Code のCortex-DebugでSemihostingを有効にする">
+    <meta name="twitter:description" content="動機 Visual Studio Code でSemihostingの有効の仕方をよく忘れるのでメモ。 環境 Visual Studio Code(Linux) 1.29 Cortex-Debug target STM32F446RE 変更点 以下をlaunch.jsonに追加する。 &#34;postLaunchCommands&#34;: [ &#34;monitor arm semihosting enable&#34; ], これでデバッグ開始するとSemihostingが有効になる。 OutputタブのAdapter OutputにSemihostingの内容が出力される。 ソース https://github.com/Marus/cortex-debug/issues/115">
 
     <!-- Facebook Meta Data -->
-    <meta property="og:title" content="Hello Blog ~ Raspberry Pi でfishのビルド"/>
-    <meta property="og:description" content="動機 自分のメインの環境をfishにしてfishの楽さを知ってしまったのでラズパイにも入れたい。 環境 Raspberry Pi 3 Model B V1.2 rasbian-stretch-lite 2018-04-18 準備 必要なパッケージをインストールする。 $ sudo aptitude install cmake autoconf git g++ libncurses5-dev \ gettext libreadline-dev libeditline-dev doxygen libedit-dev ビルド $ git clone https://github.com/fish-shell/fish-shell.git $ cd fish-shell $ mkdir build $ cd build $ cmake .. -DCMAKE_BUILD_TYPE=Release $ make $ sudo make install"/>
+    <meta property="og:title" content="Hello Blog ~ Visual Studio Code のCortex-DebugでSemihostingを有効にする"/>
+    <meta property="og:description" content="動機 Visual Studio Code でSemihostingの有効の仕方をよく忘れるのでメモ。 環境 Visual Studio Code(Linux) 1.29 Cortex-Debug target STM32F446RE 変更点 以下をlaunch.jsonに追加する。 &#34;postLaunchCommands&#34;: [ &#34;monitor arm semihosting enable&#34; ], これでデバッグ開始するとSemihostingが有効になる。 OutputタブのAdapter OutputにSemihostingの内容が出力される。 ソース https://github.com/Marus/cortex-debug/issues/115"/>
     <meta property="og:image" content=""/>
 </head>
 
@@ -97,36 +97,31 @@
 <article>
     <section id="content">
         <article>
-            <h2 class="post_title post_detail"><a href="/raspberry-pi-defishnobirudo.html" rel="bookmark"
-                                                  title="Permalink to Raspberry Pi でfishのビルド">Raspberry Pi でfishのビルド</a></h2>
+            <h2 class="post_title post_detail"><a href="/visual-studio-code-nocortex-debugdesemihostingwoyou-xiao-nisuru.html" rel="bookmark"
+                                                  title="Permalink to Visual Studio Code のCortex-DebugでSemihostingを有効にする">Visual Studio Code のCortex-DebugでSemihostingを有効にする</a></h2>
             <div class="entry-content blog-post">
                 <h2>動機</h2>
 <ul>
-<li>自分のメインの環境をfishにしてfishの楽さを知ってしまったのでラズパイにも入れたい。</li>
+<li>Visual Studio Code でSemihostingの有効の仕方をよく忘れるのでメモ。  </li>
 </ul>
 <h2>環境</h2>
 <ul>
-<li>Raspberry Pi 3 Model B V1.2</li>
-<li>rasbian-stretch-lite 2018-04-18</li>
+<li>Visual Studio Code(Linux) 1.29  </li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug">Cortex-Debug</a>  </li>
+<li>target STM32F446RE  </li>
 </ul>
-<h2>準備</h2>
-<ul>
-<li>必要なパッケージをインストールする。</li>
-</ul>
-<div class="highlight"><pre><span></span>$ sudo aptitude install cmake autoconf git g++ libncurses5-dev <span class="se">\</span>
-gettext libreadline-dev libeditline-dev doxygen libedit-dev
+<h2>変更点</h2>
+<p>以下をlaunch.jsonに追加する。  </p>
+<div class="highlight"><pre><span></span>&quot;postLaunchCommands&quot;: [
+    &quot;monitor arm semihosting enable&quot;
+],
 </pre></div>
 
 
-<h2>ビルド</h2>
-<div class="highlight"><pre><span></span>$ git clone https://github.com/fish-shell/fish-shell.git
-$ <span class="nb">cd</span> fish-shell
-$ mkdir build
-$ <span class="nb">cd</span> build
-$ cmake .. -DCMAKE_BUILD_TYPE<span class="o">=</span>Release
-$ make
-$ sudo make install
-</pre></div>
+<p>これでデバッグ開始するとSemihostingが有効になる。
+Outputタブの<strong>Adapter Output</strong>にSemihostingの内容が出力される。  </p>
+<h2>ソース</h2>
+<p>https://github.com/Marus/cortex-debug/issues/115  </p>
             </div>
             <div class="post_list">
                 <span>By </span>
@@ -134,39 +129,39 @@ $ sudo make install
                 <span> in </span>
                 <span class="post_category"><a href="/category/develop.html" rel="bookmark"
                                                title="Permalink to develop">[ develop ]</a></span>
-                <span class="post_date">火 24 4月 2018</span>
+                <span class="post_date">木 10 1月 2019</span>
                 <div><span>Tags : </span>
                             <span><a href="/tag/develop.html">#develop, </a></span>
-                            <span><a href="/tag/raspberry-pi.html">#Raspberry Pi, </a></span>
-                            <span><a href="/tag/fish-shell.html">#fish shell, </a></span>
+                            <span><a href="/tag/embedded.html">#embedded, </a></span>
+                            <span><a href="/tag/visual-studio-code.html">#Visual Studio Code, </a></span>
                 </div>
 
                 <div class="entry-social">
                     <span class="twitter"><a target="_blank" rel="nofollow"
                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
                                              title="Twitter"
-                                             href="https://twitter.com/share?url=/raspberry-pi-defishnobirudo.html&text=Raspberry Pi でfishのビルド&via=jiuya"><img
+                                             href="https://twitter.com/share?url=/visual-studio-code-nocortex-debugdesemihostingwoyou-xiao-nisuru.html&text=Visual Studio Code のCortex-DebugでSemihostingを有効にする&via=jiuya"><img
                             src="/theme/images/icons/twitter-s.png"></a></span>
 
                     <span class="gplus"><a target="_blank" title="Google +"
-                                           href="https://plus.google.com/share?url=/raspberry-pi-defishnobirudo.html&hl=fr"
+                                           href="https://plus.google.com/share?url=/visual-studio-code-nocortex-debugdesemihostingwoyou-xiao-nisuru.html&hl=fr"
                                            rel="nofollow"
                                            onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="/theme/images/icons/google-s.png"></a></span>
 
                     <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
                                               onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
-                                              href="https://www.facebook.com/sharer.php?u=/raspberry-pi-defishnobirudo.html&t=Raspberry Pi でfishのビルド"><img
+                                              href="https://www.facebook.com/sharer.php?u=/visual-studio-code-nocortex-debugdesemihostingwoyou-xiao-nisuru.html&t=Visual Studio Code のCortex-DebugでSemihostingを有効にする"><img
                             src="/theme/images/icons/facebook-s.png"></a></span>
 
                     <a target="_blank" title="Linkedin"
-                       href="https://www.linkedin.com/shareArticle?mini=true&url=/raspberry-pi-defishnobirudo.html&title=Raspberry Pi でfishのビルド"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=/visual-studio-code-nocortex-debugdesemihostingwoyou-xiao-nisuru.html&title=Visual Studio Code のCortex-DebugでSemihostingを有効にする"
                        rel="nofollow"
                        onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
                             src="/theme/images/icons/linkedin-s.png"></a>
 
                     <span class="mail"><a
-                            href="mailto:?subject=Raspberry Pi でfishのビルド&amp;body=Viens découvrir un article à propos de [Raspberry Pi でfishのビルド] sur le site de jiuya. /raspberry-pi-defishnobirudo.html"
+                            href="mailto:?subject=Visual Studio Code のCortex-DebugでSemihostingを有効にする&amp;body=Viens découvrir un article à propos de [Visual Studio Code のCortex-DebugでSemihostingを有効にする] sur le site de jiuya. /visual-studio-code-nocortex-debugdesemihostingwoyou-xiao-nisuru.html"
                             title="Share by Email" target="_blank"><img
                             src="/theme/images/icons/mail-s.png"></a></span>
                 </div>

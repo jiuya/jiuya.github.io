@@ -1,5 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2018-12-03T00:00:00+09:00</updated><entry><title>自分の開発環境</title><link href="/zi-fen-nokai-fa-huan-jing.html" rel="alternate"></link><published>2018-12-03T00:00:00+09:00</published><updated>2018-12-03T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-12-03:/zi-fen-nokai-fa-huan-jing.html</id><summary type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/2959"&gt;高知工科大 Advent Calendar 2018&lt;/a&gt;の三日目の記事です。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2019-01-10T00:00:00+09:00</updated><entry><title>Visual Studio Code のCortex-DebugでSemihostingを有効にする</title><link href="/visual-studio-code-nocortex-debugdesemihostingwoyou-xiao-nisuru.html" rel="alternate"></link><published>2019-01-10T00:00:00+09:00</published><updated>2019-01-10T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2019-01-10:/visual-studio-code-nocortex-debugdesemihostingwoyou-xiao-nisuru.html</id><summary type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual Studio Code でSemihostingの有効の仕方をよく忘れるのでメモ。  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual Studio Code(Linux) 1.29  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug"&gt;Cortex-Debug&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;target STM32F446RE  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;変更点&lt;/h2&gt;
+&lt;p&gt;以下をlaunch.jsonに追加する。  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;quot;postLaunchCommands&amp;quot;: [
+    &amp;quot;monitor arm semihosting enable&amp;quot;
+],
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;これでデバッグ開始するとSemihostingが有効になる。
+Outputタブの&lt;strong&gt;Adapter Output&lt;/strong&gt;にSemihostingの内容が出力される。  &lt;/p&gt;
+&lt;h2&gt;ソース&lt;/h2&gt;
+&lt;p&gt;https://github.com/Marus/cortex-debug/issues/115  &lt;/p&gt;</summary><content type="html">&lt;h2&gt;動機&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual Studio Code でSemihostingの有効の仕方をよく忘れるのでメモ。  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;環境&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Visual Studio Code(Linux) 1.29  &lt;/li&gt;
+&lt;li&gt;&lt;a href="https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug"&gt;Cortex-Debug&lt;/a&gt;  &lt;/li&gt;
+&lt;li&gt;target STM32F446RE  &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;変更点&lt;/h2&gt;
+&lt;p&gt;以下をlaunch.jsonに追加する。  &lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&amp;quot;postLaunchCommands&amp;quot;: [
+    &amp;quot;monitor arm semihosting enable&amp;quot;
+],
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;これでデバッグ開始するとSemihostingが有効になる。
+Outputタブの&lt;strong&gt;Adapter Output&lt;/strong&gt;にSemihostingの内容が出力される。  &lt;/p&gt;
+&lt;h2&gt;ソース&lt;/h2&gt;
+&lt;p&gt;https://github.com/Marus/cortex-debug/issues/115  &lt;/p&gt;</content><category term="develop"></category><category term="embedded"></category><category term="Visual Studio Code"></category></entry><entry><title>自分の開発環境</title><link href="/zi-fen-nokai-fa-huan-jing.html" rel="alternate"></link><published>2018-12-03T00:00:00+09:00</published><updated>2018-12-03T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-12-03:/zi-fen-nokai-fa-huan-jing.html</id><summary type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/2959"&gt;高知工科大 Advent Calendar 2018&lt;/a&gt;の三日目の記事です。&lt;/p&gt;
 &lt;h2&gt;はじめに&lt;/h2&gt;
 &lt;p&gt;いよいよ毎年恒例&lt;strong&gt;Advent Calendar&lt;/strong&gt;の時期がやってきました。&lt;/p&gt;
 &lt;p&gt;これといって書くことが思いつかなかったので2018年の自分の開発環境(Linux)でも書こうと思います。&lt;/p&gt;
@@ -10,13 +52,11 @@
 そのうちメモリ8GBにしたい。&lt;/p&gt;
 &lt;h2&gt;ディストリビューション&lt;/h2&gt;
 &lt;p&gt;OSは&lt;strong&gt;DebianのStable&lt;/strong&gt;(stretch)です。&lt;br&gt;
-Debianを選択した理由は主に以下の点です。  &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Ubuntu Desktopと比べていらないものが入ってない。&lt;/li&gt;
-&lt;li&gt;Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。&lt;/li&gt;
-&lt;li&gt;Gentooと比べて非力なPCでも初期セットアップが早い。&lt;/li&gt;
-&lt;li&gt;Archはpacmanに慣れることができなかった。&lt;/li&gt;
-&lt;/ul&gt;
+Debianを選択した理由は主に以下の点です。
+- Ubuntu Desktopと比べていらないものが入ってない。
+- Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。
+- Gentooと比べて非力なPCでも初期セットアップが早い。
+- Archはpacmanに慣れることができなかった。&lt;/p&gt;
 &lt;p&gt;サービスマネージャはDebianのdefaultの&lt;strong&gt;systemd&lt;/strong&gt;を使用しています。&lt;/p&gt;
 &lt;h2&gt;ディスプレイマネージャ、ウィンドウマネージャ&lt;/h2&gt;
 &lt;p&gt;ディスプレイマネージャは&lt;strong&gt;LightDM&lt;/strong&gt;です。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない …&lt;/p&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/2959"&gt;高知工科大 Advent Calendar 2018&lt;/a&gt;の三日目の記事です。&lt;/p&gt;
@@ -30,13 +70,11 @@ Debianを選択した理由は主に以下の点です。  &lt;/p&gt;
 そのうちメモリ8GBにしたい。&lt;/p&gt;
 &lt;h2&gt;ディストリビューション&lt;/h2&gt;
 &lt;p&gt;OSは&lt;strong&gt;DebianのStable&lt;/strong&gt;(stretch)です。&lt;br&gt;
-Debianを選択した理由は主に以下の点です。  &lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Ubuntu Desktopと比べていらないものが入ってない。&lt;/li&gt;
-&lt;li&gt;Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。&lt;/li&gt;
-&lt;li&gt;Gentooと比べて非力なPCでも初期セットアップが早い。&lt;/li&gt;
-&lt;li&gt;Archはpacmanに慣れることができなかった。&lt;/li&gt;
-&lt;/ul&gt;
+Debianを選択した理由は主に以下の点です。
+- Ubuntu Desktopと比べていらないものが入ってない。
+- Ubuntu Desktopより簡単にディスプレイマネージャ、ウィンドウマネージャを変更できる。
+- Gentooと比べて非力なPCでも初期セットアップが早い。
+- Archはpacmanに慣れることができなかった。&lt;/p&gt;
 &lt;p&gt;サービスマネージャはDebianのdefaultの&lt;strong&gt;systemd&lt;/strong&gt;を使用しています。&lt;/p&gt;
 &lt;h2&gt;ディスプレイマネージャ、ウィンドウマネージャ&lt;/h2&gt;
 &lt;p&gt;ディスプレイマネージャは&lt;strong&gt;LightDM&lt;/strong&gt;です。選択理由はメジャーだから。むしろ他のディスプレイマネージャをあまり使ったことがない。&lt;/p&gt;
