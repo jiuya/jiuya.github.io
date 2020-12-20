@@ -11,9 +11,10 @@
 ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある）&lt;br&gt;
 HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。  &lt;/p&gt;
 &lt;p&gt;電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4)  &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;自分の思う利点をまとめると&lt;/strong&gt;&lt;br&gt;
-  - そこそこ速度の出るSATAポートが２つある。
-  - mainline linux kernel Ubutnu20.04が動く …&lt;/p&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;の17日目の記事です。&lt;br&gt;
+&lt;p&gt;&lt;strong&gt;自分の思う利点をまとめると&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;そこそこ速度の出るSATAポートが２つある。&lt;/li&gt;
+&lt;li&gt;mainline linux kernel Ubutnu20.04が動く …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;の17日目の記事です。&lt;br&gt;
 そしてこの記事はメモなのでそのうち更新されるかもしれない。  &lt;/p&gt;
 &lt;h2&gt;ODROID-HC4とは&lt;/h2&gt;
 &lt;p&gt;韓国SBCメーカーHardkernel社のNAS向けSBCである。    &lt;/p&gt;
@@ -25,13 +26,15 @@ HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なの�
 ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある）&lt;br&gt;
 HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。  &lt;/p&gt;
 &lt;p&gt;電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4)  &lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;自分の思う利点をまとめると&lt;/strong&gt;&lt;br&gt;
-  - そこそこ速度の出るSATAポートが２つある。
-  - mainline linux kernel Ubutnu20.04が動く。
-  - NASとラズパイなんかで動かしていたBotなどが小さな機器で完結する。
-  - HDDの物理的な換装が容易。
-  - NASを買うと思うと安い。$65 + $9.4(ACアダプタ) + 送料
-  - いろいろイジる用SBCを常時稼働させる理由を作れる。（自分にとっては地味に一番利点）&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;自分の思う利点をまとめると&lt;/strong&gt;  &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;そこそこ速度の出るSATAポートが２つある。&lt;/li&gt;
+&lt;li&gt;mainline linux kernel Ubutnu20.04が動く。&lt;/li&gt;
+&lt;li&gt;NASとラズパイなんかで動かしていたBotなどが小さな機器で完結する。&lt;/li&gt;
+&lt;li&gt;HDDの物理的な換装が容易。&lt;/li&gt;
+&lt;li&gt;NASを買うと思うと安い。$65 + $9.4(ACアダプタ) + 送料&lt;/li&gt;
+&lt;li&gt;いろいろイジる用SBCを常時稼働させる理由を作れる。（自分にとっては地味に一番利点）&lt;/li&gt;
+&lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;要するにSBC収集家にとっては中々イカスSBCなのである。&lt;/strong&gt;  &lt;/p&gt;
 &lt;h2&gt;現在の環境&lt;/h2&gt;
 &lt;ul&gt;
