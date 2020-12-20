@@ -2,9 +2,9 @@
 <feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-12-21T00:00:00+09:00</updated><entry><title>ODROID-HC4のススメ</title><link href="/odroid-hc4nosusume.html" rel="alternate"></link><published>2020-12-21T00:00:00+09:00</published><updated>2020-12-21T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2020-12-21:/odroid-hc4nosusume.html</id><summary type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;のn日目の記事です。
 そしてこの記事はメモなのでそのうち更新されるかもしれない。&lt;/p&gt;
 &lt;h2&gt;ODROID-HC4とは&lt;/h2&gt;
-&lt;p&gt;韓国SBCメーカーのHardkernel社のNAS向けSBCである。
-&lt;img alt="ODROID-HC4" src="https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg"&gt;
-画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。
+&lt;p&gt;韓国SBCメーカーのHardkernel社のNAS向けSBCである。  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="ODROID-HC4" src="https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。
 一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。
 3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある）&lt;/p&gt;
 &lt;p&gt;正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。
@@ -17,9 +17,9 @@ HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なの�
 &lt;li&gt;mainline linux kernel Ubutnu20.04が動く …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;のn日目の記事です。
 そしてこの記事はメモなのでそのうち更新されるかもしれない。&lt;/p&gt;
 &lt;h2&gt;ODROID-HC4とは&lt;/h2&gt;
-&lt;p&gt;韓国SBCメーカーのHardkernel社のNAS向けSBCである。
-&lt;img alt="ODROID-HC4" src="https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg"&gt;
-画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。
+&lt;p&gt;韓国SBCメーカーのHardkernel社のNAS向けSBCである。  &lt;/p&gt;
+&lt;p&gt;&lt;img alt="ODROID-HC4" src="https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg"&gt;&lt;/p&gt;
+&lt;p&gt;画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。
 一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。
 3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある）&lt;/p&gt;
 &lt;p&gt;正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。
