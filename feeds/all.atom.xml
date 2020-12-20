@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-12-21T00:00:00+09:00</updated><entry><title>ODROID-HC4のススメ</title><link href="/odroid-hc4nosusume.html" rel="alternate"></link><published>2020-12-21T00:00:00+09:00</published><updated>2020-12-21T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2020-12-21:/odroid-hc4nosusume.html</id><summary type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;のn日目の記事です。&lt;br&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog</title><link href="/" rel="alternate"></link><link href="/feeds/all.atom.xml" rel="self"></link><id>/</id><updated>2020-12-21T00:00:00+09:00</updated><entry><title>ODROID-HC4のススメ</title><link href="/odroid-hc4nosusume.html" rel="alternate"></link><published>2020-12-21T00:00:00+09:00</published><updated>2020-12-21T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2020-12-21:/odroid-hc4nosusume.html</id><summary type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;の17日目の記事です。&lt;br&gt;
 そしてこの記事はメモなのでそのうち更新されるかもしれない。  &lt;/p&gt;
 &lt;h2&gt;ODROID-HC4とは&lt;/h2&gt;
 &lt;p&gt;韓国SBCメーカーHardkernel社のNAS向けSBCである。    &lt;/p&gt;
@@ -14,7 +14,7 @@ HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なの�
 &lt;ul&gt;
 &lt;li&gt;自分の思う利点をまとめると&lt;/li&gt;
 &lt;li&gt;そこそこ速度の出るSATAポートが２つある。&lt;/li&gt;
-&lt;li&gt;mainline linux kernel Ubutnu20.04が動く …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;のn日目の記事です。&lt;br&gt;
+&lt;li&gt;mainline linux kernel Ubutnu20.04が動く …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;の17日目の記事です。&lt;br&gt;
 そしてこの記事はメモなのでそのうち更新されるかもしれない。  &lt;/p&gt;
 &lt;h2&gt;ODROID-HC4とは&lt;/h2&gt;
 &lt;p&gt;韓国SBCメーカーHardkernel社のNAS向けSBCである。    &lt;/p&gt;
