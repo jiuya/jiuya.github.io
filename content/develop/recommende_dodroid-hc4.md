@@ -2,31 +2,34 @@ Title: ODROID-HC4のススメ
 Date: 2020-12-21
 Tags: develop,odroid,ubuntu,hubot
 
-この記事は[高知工科大 Advent Calendar 2020](https://adventar.org/calendars/5887)のn日目の記事です。
-そしてこの記事はメモなのでそのうち更新されるかもしれない。
+この記事は[高知工科大 Advent Calendar 2020](https://adventar.org/calendars/5887)の17日目の記事です。  
+そしてこの記事はメモなのでそのうち更新されるかもしれない。  
 
 ## ODROID-HC4とは
-韓国SBCメーカーのHardkernel社のNAS向けSBCである。
-![ODROID-HC4](https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg)
-画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。
-一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。
-3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある）
+韓国SBCメーカーHardkernel社のNAS向けSBCである。    
 
-正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。
-ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある）
-HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。
+![ODROID-HC4](https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg)  
 
-電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4)
+画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。  
+一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。  
+3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある）  
 
-- 自分の思う利点をまとめると
-  - そこそこ速度の出るSATAポートが２つある。
-  - mainline linux kernel Ubutnu20.04が動く。
-  - NASとラズパイなんかで動かしていたBotなどが小さな機器で完結する。
-  - HDDの物理的な換装が容易。
-  - NASを買うと思うと安い。$65 + $9.4(ACアダプタ) + 送料
-  - いろいろイジる用SBCを常時稼働させる理由を作れる。（自分にとっては地味に一番利点）
+正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。  
+ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある）  
+HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。  
+
+電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4)  
+
+**自分の思う利点をまとめると**  
+
+- そこそこ速度の出るSATAポートが２つある。
+- mainline linux kernel Ubutnu20.04が動く。
+- NASとラズパイなんかで動かしていたBotなどが小さな機器で完結する。
+- HDDの物理的な換装が容易。
+- NASを買うと思うと安い。$65 + $9.4(ACアダプタ) + 送料
+- いろいろイジる用SBCを常時稼働させる理由を作れる。（自分にとっては地味に一番利点）
    
-**要するにSBC収集家にとっては中々イカスSBCなのである。**
+**要するにSBC収集家にとっては中々イカスSBCなのである。**  
 
 ## 現在の環境
 - OS: Armbian_20.11.3_Odroidhc4_focal 
@@ -36,9 +39,9 @@ HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なの�
 - ssh,xrdp セットアップ済み
  
 #### NAS
-- Sambaを動かしNAS運用している。
+- Sambaを動かしNAS運用している。 
 
-```shell 
+```console
 $ sudo apt -y update
 $ sudo apt -y upgrade
 $ sudo mkdir /mnt/hdd
@@ -49,14 +52,15 @@ $ sudo pdbedit -a ユーザー名
 $ sudo systemctl enable smbd
 $ sudo reboot
 ```
+
 #### Slack Bot
-- HubotでWOL サーバーにしている。[参考文献](https://k-side.hatenablog.jp/entry/2016/05/30/180000)
-  （自分用Slackチームで ```@home wol``` と打つと自宅のメインPCにWOLパケットが送られるサーバー）
-![slack-wol.png](/content/images/slack-wol.png)
+- HubotでWOL サーバーにしている。[参考文献](https://k-side.hatenablog.jp/entry/2016/05/30/180000)  
+  （自分用Slackチームで ```@home wol``` と打つと自宅のメインPCにWOLパケットが送られるサーバー）  
+![slack-wol.png](images/slack-wol.png)  
 
-Hubot・wakeonlan インストール/setup
+Hubot・wakeonlan インストール/setup  
 
-```shell
+```console
 $ sudo apt -y install nodejs
 $ sudo apt -y install npm
 $ sudo apt -y install wakeonlan
@@ -70,15 +74,16 @@ $ sudo vim /etc/systemd/system/hubot.service //systemd ユニットファイル�
 $ sudo systemctl daemon-reload
 $ sudo systemctl enable hubot
 ```
-スクリプト部分は割愛
+スクリプト部分は割愛  
 
 #### [narou.rb](https://github.com/whiteleaf7/narou/wiki)
 - narou.rb の narou WEB UIサーバーを動かして、ローカルLAN内からアクセスできるようにしている。
 - Web UI上にURLを貼り付けるとダウンロード・ePub変換され、GoogleDriveにePubが保存されるようにしている。(narou.rbのePub保存先にGoogleDrive([google-drive-ocamlfuse](https://github.com/astrada/google-drive-ocamlfuse))を指定している)
 - (そしてGoogle Drive上のePubをAndroidのMoon+ Readerで読む!快適！)
 
-narou.rb インストール。
-```shell
+narou.rb インストール。  
+
+```console
 $ sudo apt install -y ruby
 $ sudo apt install -y ruby-dev
 $ sudo apt install -y default-jre
@@ -87,8 +92,9 @@ $ sudo vim /etc/systemd/system/narou-web.service //systemd ユニットファイ
 $ sudo systemctl daemon-reload
 $ sudo systemctl enable narou-web
 ```
-google-drive-ocamlfuse インストール。(ブラウザ認証があるのでxrdp上のシェルで)
-```shell
+google-drive-ocamlfuse インストール。(ブラウザ認証があるのでxrdp上のシェルで)  
+
+```console
 $ sudo add-apt-repository ppa:alessandro-strada/ppa
 $ sudo apt update
 $ sudo apt -y install firefox firefox-locale-ja // GUIのブラウザで認証のため
@@ -104,12 +110,12 @@ su ユーザー名 -l -c "/usr/bin/google-drive-ocamlfuse -label $1 $*"
 exit 0
 ```
 ```/mnt/gdrive```にマウント。
-```shell
+```console
 $ sudo mkdir /mnt/gdrive
 $ sudo bash -c 'echo "gdfuse#default  /mnt/gdrive     fuse    uid=1000,gid=1000,allow_other,user,_netdev     0       0" >> /etc/fstab'
 $ mount -a
 ```
-narou WEB UI上でePub出力先を```/mnt/gdrive```以下の好きなディレクトリに設定する。
+narou WEB UI上でePub出力先を```/mnt/gdrive```以下の好きなディレクトリに設定する。  
 
 ## 今後したいこと
 - SATAスロットが一本空いてるのでそのうちソフトウェアRAID1したい。
