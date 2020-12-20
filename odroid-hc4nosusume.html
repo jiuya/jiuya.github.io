@@ -134,15 +134,15 @@ HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なの�
 <ul>
 <li>Sambaを動かしNAS運用している。 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>$ sudo apt -y update
-$ sudo apt -y upgrade
-$ sudo mkdir /mnt/hdd
-$ sudo bash -c <span class="s1">&#39;echo &quot;/dev/sda1       /mnt/hdd        ntfs-3g permissions,locale=ja_JP.UTF-8  0       2&quot; &gt;&gt; /etc/fstab&#39;</span>
-$ sudo apt -y install samba
-$ sudo vim /etc/samba/smb.conf // sambaの設定をここでする
-$ sudo pdbedit -a ユーザー名
-$ sudo systemctl <span class="nb">enable</span> smbd
-$ sudo reboot
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> sudo apt -y update
+<span class="gp">$</span> sudo apt -y upgrade
+<span class="gp">$</span> sudo mkdir /mnt/hdd
+<span class="gp">$</span> sudo bash -c <span class="s1">&#39;echo &quot;/dev/sda1       /mnt/hdd        ntfs-3g permissions,locale=ja_JP.UTF-8  0       2&quot; &gt;&gt; /etc/fstab&#39;</span>
+<span class="gp">$</span> sudo apt -y install samba
+<span class="gp">$</span> sudo vim /etc/samba/smb.conf // sambaの設定をここでする
+<span class="gp">$</span> sudo pdbedit -a ユーザー名
+<span class="gp">$</span> sudo systemctl <span class="nb">enable</span> smbd
+<span class="gp">$</span> sudo reboot
 </code></pre></div>
 
 <h4>Slack Bot</h4>
@@ -152,18 +152,18 @@ $ sudo reboot
 <img alt="slack-wol.png" src="images/slack-wol.png">  </li>
 </ul>
 <p>Hubot・wakeonlan インストール/setup  </p>
-<div class="highlight"><pre><span></span><code>$ sudo apt -y install nodejs
-$ sudo apt -y install npm
-$ sudo apt -y install wakeonlan
-$ mkdir ~/hubot
-$ mkdir ~/hubot/magic
-$ <span class="nb">cd</span> ~/hubot/magic
-$ sudo npm install -g coffee-script hubot
-$ sudo npm install -g yo generator-hubot
-$ sudo npm install -g forever
-$ sudo vim /etc/systemd/system/hubot.service //systemd ユニットファイル書く
-$ sudo systemctl daemon-reload
-$ sudo systemctl <span class="nb">enable</span> hubot
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> sudo apt -y install nodejs
+<span class="gp">$</span> sudo apt -y install npm
+<span class="gp">$</span> sudo apt -y install wakeonlan
+<span class="gp">$</span> mkdir ~/hubot
+<span class="gp">$</span> mkdir ~/hubot/magic
+<span class="gp">$</span> <span class="nb">cd</span> ~/hubot/magic
+<span class="gp">$</span> sudo npm install -g coffee-script hubot
+<span class="gp">$</span> sudo npm install -g yo generator-hubot
+<span class="gp">$</span> sudo npm install -g forever
+<span class="gp">$</span> sudo vim /etc/systemd/system/hubot.service //systemd ユニットファイル書く
+<span class="gp">$</span> sudo systemctl daemon-reload
+<span class="gp">$</span> sudo systemctl <span class="nb">enable</span> hubot
 </code></pre></div>
 
 <p>スクリプト部分は割愛  </p>
@@ -174,21 +174,21 @@ $ sudo systemctl <span class="nb">enable</span> hubot
 <li>(そしてGoogle Drive上のePubをAndroidのMoon+ Readerで読む!快適！)</li>
 </ul>
 <p>narou.rb インストール。  </p>
-<div class="highlight"><pre><span></span><code>$ sudo apt install -y ruby
-$ sudo apt install -y ruby-dev
-$ sudo apt install -y default-jre
-$ sudo gem install narou
-$ sudo vim /etc/systemd/system/narou-web.service //systemd ユニットファイル書く
-$ sudo systemctl daemon-reload
-$ sudo systemctl <span class="nb">enable</span> narou-web
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> sudo apt install -y ruby
+<span class="gp">$</span> sudo apt install -y ruby-dev
+<span class="gp">$</span> sudo apt install -y default-jre
+<span class="gp">$</span> sudo gem install narou
+<span class="gp">$</span> sudo vim /etc/systemd/system/narou-web.service //systemd ユニットファイル書く
+<span class="gp">$</span> sudo systemctl daemon-reload
+<span class="gp">$</span> sudo systemctl <span class="nb">enable</span> narou-web
 </code></pre></div>
 
 <p>google-drive-ocamlfuse インストール。(ブラウザ認証があるのでxrdp上のシェルで)  </p>
-<div class="highlight"><pre><span></span><code>$ sudo add-apt-repository ppa:alessandro-strada/ppa
-$ sudo apt update
-$ sudo apt -y install firefox firefox-locale-ja // GUIのブラウザで認証のため
-$ sudo apt install -y google-drive-ocamlfuse
-$ google-drive-ocamlfuse
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> sudo add-apt-repository ppa:alessandro-strada/ppa
+<span class="gp">$</span> sudo apt update
+<span class="gp">$</span> sudo apt -y install firefox firefox-locale-ja // GUIのブラウザで認証のため
+<span class="gp">$</span> sudo apt install -y google-drive-ocamlfuse
+<span class="gp">$</span> google-drive-ocamlfuse
 </code></pre></div>
 
 <p><code>sudo vim /usr/bin/gdfuse</code> で以下の内容を書き込む。（ユーザー名は認証時のLinuxユーザー名）</p>
@@ -199,9 +199,9 @@ su ユーザー名 -l -c <span class="s2">&quot;/usr/bin/google-drive-ocamlfuse 
 </code></pre></div>
 
 <p><code>/mnt/gdrive</code>にマウント。</p>
-<div class="highlight"><pre><span></span><code>$ sudo mkdir /mnt/gdrive
-$ sudo bash -c <span class="s1">&#39;echo &quot;gdfuse#default  /mnt/gdrive     fuse    uid=1000,gid=1000,allow_other,user,_netdev     0       0&quot; &gt;&gt; /etc/fstab&#39;</span>
-$ mount -a
+<div class="highlight"><pre><span></span><code><span class="gp">$</span> sudo mkdir /mnt/gdrive
+<span class="gp">$</span> sudo bash -c <span class="s1">&#39;echo &quot;gdfuse#default  /mnt/gdrive     fuse    uid=1000,gid=1000,allow_other,user,_netdev     0       0&quot; &gt;&gt; /etc/fstab&#39;</span>
+<span class="gp">$</span> mount -a
 </code></pre></div>
 
 <p>narou WEB UI上でePub出力先を<code>/mnt/gdrive</code>以下の好きなディレクトリに設定する。  </p>

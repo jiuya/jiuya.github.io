@@ -48,15 +48,15 @@ HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なの�
 &lt;ul&gt;
 &lt;li&gt;Sambaを動かしNAS運用している。 &lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo apt -y update
-$ sudo apt -y upgrade
-$ sudo mkdir /mnt/hdd
-$ sudo bash -c &lt;span class="s1"&gt;&amp;#39;echo &amp;quot;/dev/sda1       /mnt/hdd        ntfs-3g permissions,locale=ja_JP.UTF-8  0       2&amp;quot; &amp;gt;&amp;gt; /etc/fstab&amp;#39;&lt;/span&gt;
-$ sudo apt -y install samba
-$ sudo vim /etc/samba/smb.conf // sambaの設定をここでする
-$ sudo pdbedit -a ユーザー名
-$ sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; smbd
-$ sudo reboot
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt -y update
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt -y upgrade
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo mkdir /mnt/hdd
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo bash -c &lt;span class="s1"&gt;&amp;#39;echo &amp;quot;/dev/sda1       /mnt/hdd        ntfs-3g permissions,locale=ja_JP.UTF-8  0       2&amp;quot; &amp;gt;&amp;gt; /etc/fstab&amp;#39;&lt;/span&gt;
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt -y install samba
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo vim /etc/samba/smb.conf // sambaの設定をここでする
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo pdbedit -a ユーザー名
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; smbd
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo reboot
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;h4&gt;Slack Bot&lt;/h4&gt;
@@ -66,18 +66,18 @@ $ sudo reboot
 &lt;img alt="slack-wol.png" src="images/slack-wol.png"&gt;  &lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;Hubot・wakeonlan インストール/setup  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo apt -y install nodejs
-$ sudo apt -y install npm
-$ sudo apt -y install wakeonlan
-$ mkdir ~/hubot
-$ mkdir ~/hubot/magic
-$ &lt;span class="nb"&gt;cd&lt;/span&gt; ~/hubot/magic
-$ sudo npm install -g coffee-script hubot
-$ sudo npm install -g yo generator-hubot
-$ sudo npm install -g forever
-$ sudo vim /etc/systemd/system/hubot.service //systemd ユニットファイル書く
-$ sudo systemctl daemon-reload
-$ sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; hubot
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt -y install nodejs
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt -y install npm
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt -y install wakeonlan
+&lt;span class="gp"&gt;$&lt;/span&gt; mkdir ~/hubot
+&lt;span class="gp"&gt;$&lt;/span&gt; mkdir ~/hubot/magic
+&lt;span class="gp"&gt;$&lt;/span&gt; &lt;span class="nb"&gt;cd&lt;/span&gt; ~/hubot/magic
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo npm install -g coffee-script hubot
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo npm install -g yo generator-hubot
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo npm install -g forever
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo vim /etc/systemd/system/hubot.service //systemd ユニットファイル書く
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo systemctl daemon-reload
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; hubot
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;スクリプト部分は割愛  &lt;/p&gt;
@@ -88,21 +88,21 @@ $ sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; hubot
 &lt;li&gt;(そしてGoogle Drive上のePubをAndroidのMoon+ Readerで読む!快適！)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;narou.rb インストール。  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo apt install -y ruby
-$ sudo apt install -y ruby-dev
-$ sudo apt install -y default-jre
-$ sudo gem install narou
-$ sudo vim /etc/systemd/system/narou-web.service //systemd ユニットファイル書く
-$ sudo systemctl daemon-reload
-$ sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; narou-web
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt install -y ruby
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt install -y ruby-dev
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt install -y default-jre
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo gem install narou
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo vim /etc/systemd/system/narou-web.service //systemd ユニットファイル書く
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo systemctl daemon-reload
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; narou-web
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;google-drive-ocamlfuse インストール。(ブラウザ認証があるのでxrdp上のシェルで)  &lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo add-apt-repository ppa:alessandro-strada/ppa
-$ sudo apt update
-$ sudo apt -y install firefox firefox-locale-ja // GUIのブラウザで認証のため
-$ sudo apt install -y google-drive-ocamlfuse
-$ google-drive-ocamlfuse
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo add-apt-repository ppa:alessandro-strada/ppa
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt update
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt -y install firefox firefox-locale-ja // GUIのブラウザで認証のため
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo apt install -y google-drive-ocamlfuse
+&lt;span class="gp"&gt;$&lt;/span&gt; google-drive-ocamlfuse
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code&gt;sudo vim /usr/bin/gdfuse&lt;/code&gt; で以下の内容を書き込む。（ユーザー名は認証時のLinuxユーザー名）&lt;/p&gt;
@@ -113,9 +113,9 @@ su ユーザー名 -l -c &lt;span class="s2"&gt;&amp;quot;/usr/bin/google-drive-
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;&lt;code&gt;/mnt/gdrive&lt;/code&gt;にマウント。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo mkdir /mnt/gdrive
-$ sudo bash -c &lt;span class="s1"&gt;&amp;#39;echo &amp;quot;gdfuse#default  /mnt/gdrive     fuse    uid=1000,gid=1000,allow_other,user,_netdev     0       0&amp;quot; &amp;gt;&amp;gt; /etc/fstab&amp;#39;&lt;/span&gt;
-$ mount -a
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="gp"&gt;$&lt;/span&gt; sudo mkdir /mnt/gdrive
+&lt;span class="gp"&gt;$&lt;/span&gt; sudo bash -c &lt;span class="s1"&gt;&amp;#39;echo &amp;quot;gdfuse#default  /mnt/gdrive     fuse    uid=1000,gid=1000,allow_other,user,_netdev     0       0&amp;quot; &amp;gt;&amp;gt; /etc/fstab&amp;#39;&lt;/span&gt;
+&lt;span class="gp"&gt;$&lt;/span&gt; mount -a
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;narou WEB UI上でePub出力先を&lt;code&gt;/mnt/gdrive&lt;/code&gt;以下の好きなディレクトリに設定する。  &lt;/p&gt;
