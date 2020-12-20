@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="japanese" itemscope itemtype="http://schema.org/Person">
+<head>
+            <meta charset="utf-8">
+        <!-- Site Meta Data -->
+        <title>ODROID-HC4のススメ</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="jiuya">
+
+        <link rel="shortcut icon" href="https://avatars3.githubusercontent.com/u/6884687?s=460&v=4">
+
+        <!-- schema.org -->
+        <meta itemprop="name" content="Hello Blog">
+        <meta itemprop="image" content="">
+        <meta itemprop="description" content="">
+
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+        <!-- Style Meta Data -->
+        <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="/theme/css/pygments.css" type="text/css"/>
+
+        <!-- Feed Meta Data -->
+            <link href="/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+                  title="Hello Blog ATOM Feed"/>
+
+        <!-- Twitter Feed -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="jiuya">
+        <meta name="twitter:image" content="">
+
+    <meta name="twitter:creator" content="jiuya">
+    <meta name="twitter:url" content="/odroid-hc4nosusume.html">
+    <meta name="twitter:title" content="Hello Blog ~ ODROID-HC4のススメ">
+    <meta name="twitter:description" content="この記事は高知工科大 Advent Calendar 2020のn日目の記事です。 そしてこの記事はメモなのでそのうち更新されるかもしれない。 ODROID-HC4とは 韓国SBCメーカーのHardkernel社のNAS向けSBCである。 画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。 一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。 3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある） 正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。 ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある） HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。 電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4) 自分の思う利点をまとめると そこそこ速度の出るSATAポートが２つある。 mainline linux kernel Ubutnu20.04が動く …">
+
+    <!-- Facebook Meta Data -->
+    <meta property="og:title" content="Hello Blog ~ ODROID-HC4のススメ"/>
+    <meta property="og:description" content="この記事は高知工科大 Advent Calendar 2020のn日目の記事です。 そしてこの記事はメモなのでそのうち更新されるかもしれない。 ODROID-HC4とは 韓国SBCメーカーのHardkernel社のNAS向けSBCである。 画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。 一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。 3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある） 正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。 ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある） HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。 電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4) 自分の思う利点をまとめると そこそこ速度の出るSATAポートが２つある。 mainline linux kernel Ubutnu20.04が動く …"/>
+    <meta property="og:image" content=""/>
+</head>
+
+<body>
+<!-- Sidebar -->
+<aside>
+    <!--<center><a href=""><img id="avatar" src=""></a></center>-->
+    <h1>Hello Blog</h1>
+        <p>Embedded Programmer</p>
+    <br>
+
+        <a class="twitter-follow-button"
+           href="https://twitter.com/jiuya"
+           data-show-count="false"
+           data-lang="en">
+            Follow @twitterdev
+        </a>
+        <script type="text/javascript">
+            window.twttr = (function (d, s, id) {
+                var t, js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+                return window.twttr || (t = {
+                        _e: [], ready: function (f) {
+                            t._e.push(f)
+                        }
+                    });
+            }(document, "script", "twitter-wjs"));
+        </script>
+
+    <nav class="nav">
+        <ul class="list-bare">
+
+                <li><a class="nav__link" href="https://jiuya.github.io">Blog</a></li>
+
+                <li><a class="nav__link" href="/pages/about.html">About</a></li>
+
+        </ul>
+    </nav>
+
+    <p class="social">
+                <a href="https://github.com/jiuya" target="_blank"><img
+                        src="/theme/images/icons/github.png"></a>
+                <a href="https://twitter.com/jiuya" target="_blank"><img
+                        src="/theme/images/icons/twitter.png"></a>
+            <a href="/feeds/all.atom.xml" rel="alternate">
+                <img src="/theme/images/icons/rss.png"></a>
+    </p>
+
+
+
+</aside>
+
+<!-- Content -->
+<article>
+    <section id="content">
+        <article>
+            <h2 class="post_title post_detail"><a href="/odroid-hc4nosusume.html" rel="bookmark"
+                                                  title="Permalink to ODROID-HC4のススメ">ODROID-HC4のススメ</a></h2>
+            <div class="entry-content blog-post">
+                <p>この記事は<a href="https://adventar.org/calendars/5887">高知工科大 Advent Calendar 2020</a>のn日目の記事です。
+そしてこの記事はメモなのでそのうち更新されるかもしれない。</p>
+<h2>ODROID-HC4とは</h2>
+<p>韓国SBCメーカーのHardkernel社のNAS向けSBCである。
+<img alt="ODROID-HC4" src="https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg">
+画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。
+一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。
+3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある）</p>
+<p>正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。
+ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある）
+HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。</p>
+<p>電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4)</p>
+<ul>
+<li>自分の思う利点をまとめると</li>
+<li>そこそこ速度の出るSATAポートが２つある。</li>
+<li>mainline linux kernel Ubutnu20.04が動く。</li>
+<li>NASとラズパイなんかで動かしていたBotなどが小さな機器で完結する。</li>
+<li>HDDの物理的な換装が容易。</li>
+<li>NASを買うと思うと安い。$65 + $9.4(ACアダプタ) + 送料</li>
+<li>いろいろイジる用SBCを常時稼働させる理由を作れる。（自分にとっては地味に一番利点）</li>
+</ul>
+<p><strong>要するにSBC収集家にとっては中々イカスSBCなのである。</strong></p>
+<h2>現在の環境</h2>
+<ul>
+<li>OS: Armbian_20.11.3_Odroidhc4_focal </li>
+<li>Linux Kernel: 5.9.14</li>
+<li>SATAスロット1: 6TB</li>
+<li>SATAスロット2: 空き </li>
+<li>ssh,xrdp セットアップ済み</li>
+</ul>
+<h4>NAS</h4>
+<ul>
+<li>Sambaを動かしNAS運用している。</li>
+</ul>
+<div class="highlight"><pre><span></span><code>$ sudo apt -y update
+$ sudo apt -y upgrade
+$ sudo mkdir /mnt/hdd
+$ sudo bash -c <span class="s1">&#39;echo &quot;/dev/sda1       /mnt/hdd        ntfs-3g permissions,locale=ja_JP.UTF-8  0       2&quot; &gt;&gt; /etc/fstab&#39;</span>
+$ sudo apt -y install samba
+$ sudo vim /etc/samba/smb.conf // sambaの設定をここでする
+$ sudo pdbedit -a ユーザー名
+$ sudo systemctl <span class="nb">enable</span> smbd
+$ sudo reboot
+</code></pre></div>
+
+<h4>Slack Bot</h4>
+<ul>
+<li>HubotでWOL サーバーにしている。<a href="https://k-side.hatenablog.jp/entry/2016/05/30/180000">参考文献</a>
+  （自分用Slackチームで <code>@home wol</code> と打つと自宅のメインPCにWOLパケットが送られるサーバー）
+<img alt="slack-wol.png" src="/content/images/slack-wol.png"></li>
+</ul>
+<p>Hubot・wakeonlan インストール/setup</p>
+<div class="highlight"><pre><span></span><code>$ sudo apt -y install nodejs
+$ sudo apt -y install npm
+$ sudo apt -y install wakeonlan
+$ mkdir ~/hubot
+$ mkdir ~/hubot/magic
+$ <span class="nb">cd</span> ~/hubot/magic
+$ sudo npm install -g coffee-script hubot
+$ sudo npm install -g yo generator-hubot
+$ sudo npm install -g forever
+$ sudo vim /etc/systemd/system/hubot.service //systemd ユニットファイル書く
+$ sudo systemctl daemon-reload
+$ sudo systemctl <span class="nb">enable</span> hubot
+</code></pre></div>
+
+<p>スクリプト部分は割愛</p>
+<h4><a href="https://github.com/whiteleaf7/narou/wiki">narou.rb</a></h4>
+<ul>
+<li>narou.rb の narou WEB UIサーバーを動かして、ローカルLAN内からアクセスできるようにしている。</li>
+<li>Web UI上にURLを貼り付けるとダウンロード・ePub変換され、GoogleDriveにePubが保存されるようにしている。(narou.rbのePub保存先にGoogleDrive(<a href="https://github.com/astrada/google-drive-ocamlfuse">google-drive-ocamlfuse</a>)を指定している)</li>
+<li>(そしてGoogle Drive上のePubをAndroidのMoon+ Readerで読む!快適！)</li>
+</ul>
+<p>narou.rb インストール。</p>
+<div class="highlight"><pre><span></span><code>$ sudo apt install -y ruby
+$ sudo apt install -y ruby-dev
+$ sudo apt install -y default-jre
+$ sudo gem install narou
+$ sudo vim /etc/systemd/system/narou-web.service //systemd ユニットファイル書く
+$ sudo systemctl daemon-reload
+$ sudo systemctl <span class="nb">enable</span> narou-web
+</code></pre></div>
+
+<p>google-drive-ocamlfuse インストール。(ブラウザ認証があるのでxrdp上のシェルで)</p>
+<div class="highlight"><pre><span></span><code>$ sudo add-apt-repository ppa:alessandro-strada/ppa
+$ sudo apt update
+$ sudo apt -y install firefox firefox-locale-ja // GUIのブラウザで認証のため
+$ sudo apt install -y google-drive-ocamlfuse
+$ google-drive-ocamlfuse
+</code></pre></div>
+
+<p><code>sudo vim /usr/bin/gdfuse</code> で以下の内容を書き込む。（ユーザー名は認証時のLinuxユーザー名）</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+su ユーザー名 -l -c <span class="s2">&quot;/usr/bin/google-drive-ocamlfuse -label </span><span class="nv">$1</span><span class="s2"> </span><span class="nv">$*</span><span class="s2">&quot;</span>
+<span class="nb">exit</span> <span class="m">0</span>
+</code></pre></div>
+
+<p><code>/mnt/gdrive</code>にマウント。</p>
+<div class="highlight"><pre><span></span><code>$ sudo mkdir /mnt/gdrive
+$ sudo bash -c <span class="s1">&#39;echo &quot;gdfuse#default  /mnt/gdrive     fuse    uid=1000,gid=1000,allow_other,user,_netdev     0       0&quot; &gt;&gt; /etc/fstab&#39;</span>
+$ mount -a
+</code></pre></div>
+
+<p>narou WEB UI上でePub出力先を<code>/mnt/gdrive</code>以下の好きなディレクトリに設定する。</p>
+<h2>今後したいこと</h2>
+<ul>
+<li>SATAスロットが一本空いてるのでそのうちソフトウェアRAID1したい。</li>
+<li>Slackに<code>@home narou URL</code>とすることでなろう小説をダンロード・ePub変換を走らせたい。（やってみたがHubotのスクリプトで<code>narou download URL</code>が動かない。有識者求む。）</li>
+<li>microSDの命が消える前にイメージバックアップを仕込みたい。</li>
+</ul>
+<h2>参考</h2>
+<p><a href="https://k-side.hatenablog.jp/entry/2016/05/30/180000">Slack から Hubot 経由で会社にあるパソコンの電源をオンにする</a></p>
+            </div>
+            <div class="post_list">
+                <span>By </span>
+                <a href="/author/jiuya.html">@jiuya</a>
+                <span> in </span>
+                <span class="post_category"><a href="/category/develop.html" rel="bookmark"
+                                               title="Permalink to develop">[ develop ]</a></span>
+                <span class="post_date">月 21 12月 2020</span>
+                <div><span>Tags : </span>
+                            <span><a href="/tag/develop.html">#develop, </a></span>
+                            <span><a href="/tag/odroid.html">#odroid, </a></span>
+                            <span><a href="/tag/ubuntu.html">#ubuntu, </a></span>
+                            <span><a href="/tag/hubot.html">#hubot, </a></span>
+                </div>
+
+                <div class="entry-social">
+                    <span class="twitter"><a target="_blank" rel="nofollow"
+                                             onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=400,width=700');return false;"
+                                             title="Twitter"
+                                             href="https://twitter.com/share?url=/odroid-hc4nosusume.html&text=ODROID-HC4のススメ&via=jiuya"><img
+                            src="/theme/images/icons/twitter-s.png"></a></span>
+
+                    <span class="gplus"><a target="_blank" title="Google +"
+                                           href="https://plus.google.com/share?url=/odroid-hc4nosusume.html&hl=fr"
+                                           rel="nofollow"
+                                           onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="/theme/images/icons/google-s.png"></a></span>
+
+                    <span class="facebook"><a target="_blank" title="Facebook" rel="nofollow"
+                                              onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=500,width=700');return false;"
+                                              href="https://www.facebook.com/sharer.php?u=/odroid-hc4nosusume.html&t=ODROID-HC4のススメ"><img
+                            src="/theme/images/icons/facebook-s.png"></a></span>
+
+                    <a target="_blank" title="Linkedin"
+                       href="https://www.linkedin.com/shareArticle?mini=true&url=/odroid-hc4nosusume.html&title=ODROID-HC4のススメ"
+                       rel="nofollow"
+                       onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=450,width=650');return false;"><img
+                            src="/theme/images/icons/linkedin-s.png"></a>
+
+                    <span class="mail"><a
+                            href="mailto:?subject=ODROID-HC4のススメ&amp;body=Viens découvrir un article à propos de [ODROID-HC4のススメ] sur le site de jiuya. /odroid-hc4nosusume.html"
+                            title="Share by Email" target="_blank"><img
+                            src="/theme/images/icons/mail-s.png"></a></span>
+                </div>
+            </div>
+        </article>
+    </section>
+</article>
+
+<!-- Footer -->
+    <footer>
+        <p>
+            Blog powered by <a href="http://getpelican.com/">Pelican</a>,
+            which takes great advantage of <a href="http://python.org">Python</a>.
+            Theme <a href="https://github.com/parbhat/pelican-blue">Pelican-Blue</a> by <a
+                href="https://parbhatpuri.com/">@parbhat</a>.
+        </p>
+    </footer>
+
+
+</body>
+</html>

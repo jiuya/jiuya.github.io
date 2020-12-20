@@ -137,18 +137,17 @@ i3の選択理由は以下の点です。
 prefixは<strong>Ctrl+a</strong>にしています。Caps LockをCtrlに割り当てているので、そこから近いaを選択しているだけです。minicomのdefaultのprefixと被っているのがちょっと問題ではあります。  </p>
 <p><strong>tpm</strong>を使ってplugin管理もしてます。
 以下が入れているpluginです。</p>
-<div class="highlight"><pre><span></span>set -g @tpm_plugins &#39;               \
- tmux-plugins/tpm                   \
- tmux-plugins/tmux-yank             \
- tmux-plugins/tmux-open             \
- tmux-plugins/tmux-resurrect        \
- tmux-plugins/tmux-battery          \
- tmux-plugins/tmux-pain-control     \
- tmux-plugins/tmux-copycat          \
- tmux-plugins/tmux-prefix-highlight \
-&#39;
-</pre></div>
-
+<div class="highlight"><pre><span></span><code><span class="err">set -g @tpm_plugins &#39;               \</span>
+<span class="err"> tmux-plugins/tpm                   \</span>
+<span class="err"> tmux-plugins/tmux-yank             \</span>
+<span class="err"> tmux-plugins/tmux-open             \</span>
+<span class="err"> tmux-plugins/tmux-resurrect        \</span>
+<span class="err"> tmux-plugins/tmux-battery          \</span>
+<span class="err"> tmux-plugins/tmux-pain-control     \</span>
+<span class="err"> tmux-plugins/tmux-copycat          \</span>
+<span class="err"> tmux-plugins/tmux-prefix-highlight \</span>
+<span class="err">&#39;</span>
+</code></pre></div>
 
 <p><strong>tmux-yank</strong>や<strong>tmux-copycat</strong>などのコピー系プラグインは端末に表示されているすべての情報を簡単にコピーペーストできるので非常に便利です。  </p>
 <h2>shell</h2>

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - test</title><link href="/" rel="alternate"></link><link href="/feeds/test.atom.xml" rel="self"></link><id>/</id><updated>2018-01-09T19:08:00+09:00</updated><entry><title>おはよう世界</title><link href="/ohayoushi-jie.html" rel="alternate"></link><published>2018-01-09T19:08:00+09:00</published><updated>2018-01-09T19:08:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-01-09:/ohayoushi-jie.html</id><summary type="html">&lt;p&gt;ブログを作ってみた。&lt;/p&gt;</summary><content type="html">&lt;p&gt;ブログを作ってみた。&lt;/p&gt;</content></entry><entry><title>test</title><link href="/test.html" rel="alternate"></link><published>2018-01-09T00:00:00+09:00</published><updated>2018-01-09T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-01-09:/test.html</id><summary type="html">&lt;h1&gt;test&lt;/h1&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - test</title><link href="/" rel="alternate"></link><link href="/feeds/test.atom.xml" rel="self"></link><id>/</id><updated>2018-01-09T19:08:00+09:00</updated><entry><title>おはよう世界</title><link href="/ohayoushi-jie.html" rel="alternate"></link><published>2018-01-09T19:08:00+09:00</published><updated>2018-01-09T19:08:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-01-09:/ohayoushi-jie.html</id><content type="html">&lt;p&gt;ブログを作ってみた。&lt;/p&gt;</content><category term="test"></category></entry><entry><title>test</title><link href="/test.html" rel="alternate"></link><published>2018-01-09T00:00:00+09:00</published><updated>2018-01-09T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2018-01-09:/test.html</id><content type="html">&lt;h1&gt;test&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;test&lt;/li&gt;
 &lt;li&gt;hoge&lt;/li&gt;
-&lt;/ul&gt;</summary><content type="html">&lt;h1&gt;test&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;test&lt;/li&gt;
-&lt;li&gt;hoge&lt;/li&gt;
-&lt;/ul&gt;</content></entry></feed>
+&lt;/ul&gt;</content><category term="test"></category></entry></feed>

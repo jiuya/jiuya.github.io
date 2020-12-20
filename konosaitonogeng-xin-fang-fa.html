@@ -106,16 +106,14 @@
 <li><code>$ pelican-quickstart</code> が行われているものとする。</li>
 <li>このリポジトリをクローンする。</li>
 </ul>
-<div class="highlight"><pre><span></span>$ git clone --recursive -b <span class="nb">source</span> https://github.com/jiuya/jiuya.github.io.git
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>$ git clone --recursive -b <span class="nb">source</span> https://github.com/jiuya/jiuya.github.io.git
+</code></pre></div>
 
 <ul>
 <li>必要なパッケージをインストールする。</li>
 </ul>
-<div class="highlight"><pre><span></span>$ pip install -r requirements.txt
-</pre></div>
-
+<div class="highlight"><pre><span></span><code>$ pip install -r requirements.txt
+</code></pre></div>
 
 <h2>記事を書く</h2>
 <ul>
@@ -126,19 +124,17 @@
 <li>マークダウン形式のファイルをHTMLファイルに変換する。</li>
 <li>変換したファイルを<strong>ghp-import</strong>を使用してGithubにpushする。</li>
 </ul>
-<div class="highlight"><pre><span></span><span class="err">$</span> <span class="n">make</span> <span class="n">html</span>
+<div class="highlight"><pre><span></span><code><span class="err">$</span> <span class="n">make</span> <span class="n">html</span>
 <span class="err">$</span> <span class="n">ghp</span><span class="o">-</span><span class="kn">import</span> <span class="nn">output</span>
 <span class="err">$</span> <span class="n">git</span> <span class="n">push</span> <span class="o">-</span><span class="n">f</span> <span class="n">origin</span> <span class="n">gh</span><span class="o">-</span><span class="n">pages</span><span class="p">:</span><span class="n">master</span>
-</pre></div>
-
+</code></pre></div>
 
 <ul>
 <li>(追記) githubにアップロードはMakefileに含まれていた。</li>
 </ul>
-<div class="highlight"><pre><span></span>$ make html
+<div class="highlight"><pre><span></span><code>$ make html
 $ make github
-</pre></div>
-
+</code></pre></div>
 
 <p>でも良い。</p>
 <h2>参考</h2>

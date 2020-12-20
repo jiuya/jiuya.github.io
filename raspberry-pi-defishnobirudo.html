@@ -113,20 +113,19 @@
 <ul>
 <li>必要なパッケージをインストールする。</li>
 </ul>
-<div class="highlight"><pre><span></span>$ sudo aptitude install cmake autoconf git g++ libncurses5-dev <span class="se">\</span>
+<div class="highlight"><pre><span></span><code>$ sudo aptitude install cmake autoconf git g++ libncurses5-dev <span class="se">\</span>
 gettext libreadline-dev libeditline-dev doxygen libedit-dev
-</pre></div>
-
+</code></pre></div>
 
 <h2>ビルド</h2>
-<div class="highlight"><pre><span></span>$ git clone https://github.com/fish-shell/fish-shell.git
+<div class="highlight"><pre><span></span><code>$ git clone https://github.com/fish-shell/fish-shell.git
 $ <span class="nb">cd</span> fish-shell
 $ mkdir build
 $ <span class="nb">cd</span> build
 $ cmake .. -DCMAKE_BUILD_TYPE<span class="o">=</span>Release
 $ make
 $ sudo make install
-</pre></div>
+</code></pre></div>
             </div>
             <div class="post_list">
                 <span>By </span>
