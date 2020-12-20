@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - develop</title><link href="/" rel="alternate"></link><link href="/feeds/develop.atom.xml" rel="self"></link><id>/</id><updated>2020-12-21T00:00:00+09:00</updated><entry><title>ODROID-HC4のススメ</title><link href="/odroid-hc4nosusume.html" rel="alternate"></link><published>2020-12-21T00:00:00+09:00</published><updated>2020-12-21T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2020-12-21:/odroid-hc4nosusume.html</id><summary type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;のn日目の記事です。
-そしてこの記事はメモなのでそのうち更新されるかもしれない。&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Hello Blog - develop</title><link href="/" rel="alternate"></link><link href="/feeds/develop.atom.xml" rel="self"></link><id>/</id><updated>2020-12-21T00:00:00+09:00</updated><entry><title>ODROID-HC4のススメ</title><link href="/odroid-hc4nosusume.html" rel="alternate"></link><published>2020-12-21T00:00:00+09:00</published><updated>2020-12-21T00:00:00+09:00</updated><author><name>jiuya</name></author><id>tag:None,2020-12-21:/odroid-hc4nosusume.html</id><summary type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;のn日目の記事です。&lt;br&gt;
+そしてこの記事はメモなのでそのうち更新されるかもしれない。  &lt;/p&gt;
 &lt;h2&gt;ODROID-HC4とは&lt;/h2&gt;
-&lt;p&gt;韓国SBCメーカーのHardkernel社のNAS向けSBCである。  &lt;/p&gt;
-&lt;p&gt;&lt;img alt="ODROID-HC4" src="https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。
-一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。
-3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある）&lt;/p&gt;
-&lt;p&gt;正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。
-ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある）
-HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。&lt;/p&gt;
-&lt;p&gt;電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4)&lt;/p&gt;
+&lt;p&gt;韓国SBCメーカーHardkernel社のNAS向けSBCである。    &lt;/p&gt;
+&lt;p&gt;&lt;img alt="ODROID-HC4" src="https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg"&gt;  &lt;/p&gt;
+&lt;p&gt;画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。&lt;br&gt;
+一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。&lt;br&gt;
+3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある）  &lt;/p&gt;
+&lt;p&gt;正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。&lt;br&gt;
+ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある）&lt;br&gt;
+HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。  &lt;/p&gt;
+&lt;p&gt;電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4)  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;自分の思う利点をまとめると&lt;/li&gt;
 &lt;li&gt;そこそこ速度の出るSATAポートが２つある。&lt;/li&gt;
-&lt;li&gt;mainline linux kernel Ubutnu20.04が動く …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;のn日目の記事です。
-そしてこの記事はメモなのでそのうち更新されるかもしれない。&lt;/p&gt;
+&lt;li&gt;mainline linux kernel Ubutnu20.04が動く …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;この記事は&lt;a href="https://adventar.org/calendars/5887"&gt;高知工科大 Advent Calendar 2020&lt;/a&gt;のn日目の記事です。&lt;br&gt;
+そしてこの記事はメモなのでそのうち更新されるかもしれない。  &lt;/p&gt;
 &lt;h2&gt;ODROID-HC4とは&lt;/h2&gt;
-&lt;p&gt;韓国SBCメーカーのHardkernel社のNAS向けSBCである。  &lt;/p&gt;
-&lt;p&gt;&lt;img alt="ODROID-HC4" src="https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg"&gt;&lt;/p&gt;
-&lt;p&gt;画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。
-一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。
-3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある）&lt;/p&gt;
-&lt;p&gt;正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。
-ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある）
-HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。&lt;/p&gt;
-&lt;p&gt;電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4)&lt;/p&gt;
+&lt;p&gt;韓国SBCメーカーHardkernel社のNAS向けSBCである。    &lt;/p&gt;
+&lt;p&gt;&lt;img alt="ODROID-HC4" src="https://cdn.hardkernel.com/wp-content/uploads/2020/10/ODROID-HC4_hdd-800x800.jpg"&gt;  &lt;/p&gt;
+&lt;p&gt;画像を見てもらうと分かる通りSATA接続でHDDがそのままブッ刺せる。&lt;br&gt;
+一見外付けHDDに見えるが、正体はHDDが刺せるSBC。もちろんSSDでも動く。&lt;br&gt;
+3.5inch以外に一応2.4inchも刺さる。（固定されないので不安定ではある）  &lt;/p&gt;
+&lt;p&gt;正面からは見えないが、1xMicroSDスロット・1x1GbEポート・1xUSB2.0・1xHDMI2.0(4K/60Hz出力可能)がついている。&lt;br&gt;
+ブートはMicroSD/SATA(HDD/SDD)/USBストレージ/PXEから可能。（MicroSDからが楽ではある）&lt;br&gt;
+HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なので、メディアプレイヤー的な使い方も可能。  &lt;/p&gt;
+&lt;p&gt;電源が15V4A品と微妙に手に入りづらいので買うときに一緒にACアダプタも買ったほうが良い。(ACアダプタは$9.4)  &lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;自分の思う利点をまとめると&lt;/li&gt;
 &lt;li&gt;そこそこ速度の出るSATAポートが２つある。&lt;/li&gt;
@@ -35,7 +35,7 @@ HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なの�
 &lt;li&gt;NASを買うと思うと安い。$65 + $9.4(ACアダプタ) + 送料&lt;/li&gt;
 &lt;li&gt;いろいろイジる用SBCを常時稼働させる理由を作れる。（自分にとっては地味に一番利点）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;要するにSBC収集家にとっては中々イカスSBCなのである。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;要するにSBC収集家にとっては中々イカスSBCなのである。&lt;/strong&gt;  &lt;/p&gt;
 &lt;h2&gt;現在の環境&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;OS: Armbian_20.11.3_Odroidhc4_focal &lt;/li&gt;
@@ -46,7 +46,7 @@ HDMI2.0がついておりS905X3（STBなどで採用されているSoC）なの�
 &lt;/ul&gt;
 &lt;h4&gt;NAS&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;Sambaを動かしNAS運用している。&lt;/li&gt;
+&lt;li&gt;Sambaを動かしNAS運用している。 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo apt -y update
 $ sudo apt -y upgrade
@@ -61,11 +61,11 @@ $ sudo reboot
 
 &lt;h4&gt;Slack Bot&lt;/h4&gt;
 &lt;ul&gt;
-&lt;li&gt;HubotでWOL サーバーにしている。&lt;a href="https://k-side.hatenablog.jp/entry/2016/05/30/180000"&gt;参考文献&lt;/a&gt;
-  （自分用Slackチームで &lt;code&gt;@home wol&lt;/code&gt; と打つと自宅のメインPCにWOLパケットが送られるサーバー）
-&lt;img alt="slack-wol.png" src="/content/images/slack-wol.png"&gt;&lt;/li&gt;
+&lt;li&gt;HubotでWOL サーバーにしている。&lt;a href="https://k-side.hatenablog.jp/entry/2016/05/30/180000"&gt;参考文献&lt;/a&gt;&lt;br&gt;
+  （自分用Slackチームで &lt;code&gt;@home wol&lt;/code&gt; と打つと自宅のメインPCにWOLパケットが送られるサーバー）&lt;br&gt;
+&lt;img alt="slack-wol.png" src="/content/images/slack-wol.png"&gt;  &lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;Hubot・wakeonlan インストール/setup&lt;/p&gt;
+&lt;p&gt;Hubot・wakeonlan インストール/setup  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo apt -y install nodejs
 $ sudo apt -y install npm
 $ sudo apt -y install wakeonlan
@@ -80,14 +80,14 @@ $ sudo systemctl daemon-reload
 $ sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; hubot
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;スクリプト部分は割愛&lt;/p&gt;
+&lt;p&gt;スクリプト部分は割愛  &lt;/p&gt;
 &lt;h4&gt;&lt;a href="https://github.com/whiteleaf7/narou/wiki"&gt;narou.rb&lt;/a&gt;&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;narou.rb の narou WEB UIサーバーを動かして、ローカルLAN内からアクセスできるようにしている。&lt;/li&gt;
 &lt;li&gt;Web UI上にURLを貼り付けるとダウンロード・ePub変換され、GoogleDriveにePubが保存されるようにしている。(narou.rbのePub保存先にGoogleDrive(&lt;a href="https://github.com/astrada/google-drive-ocamlfuse"&gt;google-drive-ocamlfuse&lt;/a&gt;)を指定している)&lt;/li&gt;
 &lt;li&gt;(そしてGoogle Drive上のePubをAndroidのMoon+ Readerで読む!快適！)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;narou.rb インストール。&lt;/p&gt;
+&lt;p&gt;narou.rb インストール。  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo apt install -y ruby
 $ sudo apt install -y ruby-dev
 $ sudo apt install -y default-jre
@@ -97,7 +97,7 @@ $ sudo systemctl daemon-reload
 $ sudo systemctl &lt;span class="nb"&gt;enable&lt;/span&gt; narou-web
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;google-drive-ocamlfuse インストール。(ブラウザ認証があるのでxrdp上のシェルで)&lt;/p&gt;
+&lt;p&gt;google-drive-ocamlfuse インストール。(ブラウザ認証があるのでxrdp上のシェルで)  &lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;$ sudo add-apt-repository ppa:alessandro-strada/ppa
 $ sudo apt update
 $ sudo apt -y install firefox firefox-locale-ja // GUIのブラウザで認証のため
@@ -118,7 +118,7 @@ $ sudo bash -c &lt;span class="s1"&gt;&amp;#39;echo &amp;quot;gdfuse#default  /m
 $ mount -a
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;narou WEB UI上でePub出力先を&lt;code&gt;/mnt/gdrive&lt;/code&gt;以下の好きなディレクトリに設定する。&lt;/p&gt;
+&lt;p&gt;narou WEB UI上でePub出力先を&lt;code&gt;/mnt/gdrive&lt;/code&gt;以下の好きなディレクトリに設定する。  &lt;/p&gt;
 &lt;h2&gt;今後したいこと&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;SATAスロットが一本空いてるのでそのうちソフトウェアRAID1したい。&lt;/li&gt;
